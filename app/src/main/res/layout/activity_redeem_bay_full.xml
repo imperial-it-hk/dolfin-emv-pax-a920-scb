@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:id="@+id/constraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_10"
+        app:layout_constraintGuide_percent="0.02" app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_v_50"
+            app:layout_constraintGuide_percent="0.5"
+    />
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_90"
+            app:layout_constraintGuide_percent="0.9"/>
+   <!-- <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/layout_currency" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:background="@color/colorBPSDarkGray"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_main_body_h_10" android:layout_marginBottom="8dp">
+
+        <TextView
+                android:text="@string/include_numpad_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewNumpadCurrency"
+                android:textAlignment="textEnd" android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#FFFFFF" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/layout_body"
+            app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_main_body_h_90"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                    android:id="@+id/amountLabel"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/instalment_amount"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                    android:id="@+id/redeemAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:focusedByDefault="true"
+                    android:hint="00 "
+                    android:inputType="numberDecimal"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="?attr/editTextColor"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/amountLabel"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_point_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_amount">
+
+            <TextView
+                    android:id="@+id/pointListLabel"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/redeem_point_list"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_pointList"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pointListLabel"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <Spinner
+                        android:id="@+id/pointList"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:entries="@array/edc_redeem_bay_points_entries"
+                        android:fadingEdge="horizontal"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/layout_pointText"
+                app:layout_constraintTop_toBottomOf="@+id/layout_point_list"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+        >
+
+            <TextView
+                    android:id="@+id/pointsLabel"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/redeem_point"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                    android:id="@+id/points"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="?attr/editTextColor"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/pointsLabel"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/layout_promo_code"
+                app:layout_constraintTop_toBottomOf="@+id/layout_pointText">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/scanner"
+                    android:id="@+id/imageButtonScanPromoCode"
+                    app:layout_constraintStart_toEndOf="@+id/promoCode"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/promoCodeLabel"/>
+
+            <EditText
+                    android:id="@+id/promoCode"
+                    android:layout_width="280dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/background_light"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="?attr/editTextColor"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/promoCodeLabel" />
+
+            <TextView
+                    android:id="@+id/promoCodeLabel"
+                    android:layout_width="297dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/redeem_promo_code"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/layout_product_code"
+                app:layout_constraintTop_toBottomOf="@+id/layout_promo_code">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/scanner"
+                    android:id="@+id/imageButtonScanProductCode"
+                    app:layout_constraintStart_toEndOf="@+id/productCode"
+                    android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/productCodeLabel"/>
+            <EditText
+                    android:layout_width="280dp"
+                    android:layout_height="56dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/productCode"
+                    android:textColor="?attr/editTextColor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30sp"
+                    android:background="@android:color/background_light"
+                    android:maxLength="20"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/productCodeLabel" android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    android:id="@+id/productCodeLabel"
+                    android:layout_width="297dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/redeem_product_code"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_catalog_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_product_code">
+
+            <TextView
+                    android:id="@+id/catalogTypeListLabel"
+                    android:layout_width="110dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/redeem_catalog_list"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+                    android:textSize="30sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_catalogList"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/background"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/catalogTypeListLabel"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <Spinner
+                        android:id="@+id/catalogList"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:entries="@array/edc_redeem_bay_catalog_entries"
+                        android:fadingEdge="horizontal"
+                        android:textSize="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline_main_body_h_90" android:id="@+id/layout_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+        <include android:layout_width="0dp" android:layout_height="0dp"
+                 layout="@layout/include_button_cancel_ok" app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                 app:layout_constraintVertical_bias="1.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

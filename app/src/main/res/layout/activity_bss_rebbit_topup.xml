@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/top-up_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100" />
+
+    <Button
+        android:id="@+id/top-up_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="200" />
+
+    <Button
+        android:id="@+id/top-up_300"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="300" />
+
+    <Button
+        android:id="@+id/top-up_400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="400" />
+
+    <Button
+        android:id="@+id/top-up_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="500" />
+
+    <Button
+        android:id="@+id/top-up_1000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1000" />
+    <Button
+        android:id="@+id/top-up_etc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Amount" />
+</LinearLayout>

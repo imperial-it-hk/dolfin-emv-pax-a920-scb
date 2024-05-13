@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:paddingStart="@dimen/space_horizontal"
+    android:paddingEnd="@dimen/space_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_large"
+        android:layout_marginBottom="@dimen/space_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_shape"
+            android:contentDescription="@string/image_desc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_pax"
+            android:contentDescription="@string/image_desc" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selfTest"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center|top"
+        android:paddingStart="@dimen/space_horizontal"
+        android:paddingEnd="@dimen/space_horizontal"
+        android:text="@string/wait_self_test"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="@dimen/font_size_prompt" />
+</LinearLayout>

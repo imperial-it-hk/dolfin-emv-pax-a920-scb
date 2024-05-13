@@ -1,0 +1,161 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.pax.pay.MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/gl_top">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_top_inner_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_top_inner_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_top_inner_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_top_inner_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <TextView
+            android:id="@+id/txv_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/label_amount"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_size_prompt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/gl_top_inner_right"
+            app:layout_constraintStart_toEndOf="@id/gl_top_inner_left"
+            app:layout_constraintTop_toBottomOf="@id/gl_top_inner_top"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/amount_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="0.00"
+            android:textAlignment="textEnd"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@id/gl_top_inner_right"
+            app:layout_constraintStart_toEndOf="@id/gl_top_inner_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_amount_label"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_trans_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/title_erc_payment_select_userguide"
+            android:textAlignment="viewStart"
+            android:textColor="#F0F0F0"
+            android:textSize="@dimen/font_size_prompt"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/gl_top_inner_right"
+            app:layout_constraintStart_toEndOf="@id/gl_top_inner_left"
+            app:layout_constraintTop_toBottomOf="@id/amount_edit"
+            tools:ignore="MissingConstraints"
+            tools:textSize="14sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="80dp"
+        android:backgroundTint="#F44336"
+        android:text="Button"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.00" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.00" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:background="@color/background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_cancel"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_top"
+        tools:layout_constraintEnd_toStartOf="@id/gl_right"
+        tools:ignore="MissingConstraints">
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal"
+    >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <Button
+        android:id="@+id/readCard_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read Card"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/card_result"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/card_img"
+        android:layout_width="match_parent"
+        android:layout_height="244dp" />
+</LinearLayout>

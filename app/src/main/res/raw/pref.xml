@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <!--LAN PARAMETERS -->
+    <boolean
+        name="LAN_DHCP"
+        value="false" />
+    <string name="LAN_DNS1">192.168.0.111</string>
+    <string name="LAN_DNS2">192.168.0.112</string>
+    <string name="LAN_LOCAL_IP">172.16.10.125</string>
+    <string name="LAN_GATEWAY">172.16.10.1</string>
+    <string name="LAN_NETMASK">255.255.255.0</string>
+
+    <!--void,refund: 000000   admin:88888888-->
+    <string name="SEC_VOID_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_REFUND_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_SETTLE_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_TLE_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_ADJUST_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_SYS_PWD">05b530ad0fb56286fe051d5f8be5b8453f1cd93f</string>
+    <string name="SEC_MERCHANT_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_CONFIG_PWD">3fcfc1f7f34e78a937e81171ba51dc39538db993</string>
+    <string name="SEC_TERMINAL_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_CANCEL_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_DYNAMIC_OFFLINE_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_OFFLINE_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+    <string name="SEC_TIP_ADJUSTMENT_PWD">c984aed014aec7623a54f0591da07a85fd4b762d</string>
+
+    <string name="COMM_REDIAL_TIMES">3</string>
+    <string name="LAN_HOST_IP_BAK">0.0.0.0</string>
+    <string name="QUICK_PASS_TRANS_PIN_FREE_AMOUNT">30000</string>
+
+    <string name="LAN_HOST_PORT_BAK">0</string>
+    <boolean
+        name="EDC_ENABLE_PAPERLESS"
+        value="true" />
+    <string name="EDC_SMTP_FROM"></string>
+    <boolean
+        name="QUICK_PASS_TRANS_PIN_FREE_SWITCH"
+        value="false" />
+    <string name="MAX_TRANS_COUNT">500</string>
+    <string name="EDC_STAN_NO">1</string>
+    <string name="EDC_TRACE_NO">1</string>
+    <string name="EDC_NUM_OF_SLIP_LINEPAY">1</string>
+
+    <string name="EDC_SMTP_PORT">25</string>
+    <string name="OFFLINE_TC_UPLOAD_NUM">10</string>
+    <boolean
+        name="EDC_SUPPORT_TIP"
+        value="false" />
+    <boolean
+        name="EDC_CONFIRM_PROCESS"
+        value="true" />
+
+    <string name="MK_INDEX">1</string>
+    <string name="COMM_TYPE">MOBILE</string>
+    <string name="EDC_MERCHANT_ADDRESS">Merchant Addr</string>
+    <boolean
+        name="TTS_SALE"
+        value="true" />
+    <boolean
+        name="IS_SETTLED_RABBIT"
+        value="false" />
+    <boolean
+        name="IS_DOWNLOADED_CD"
+        value="false" />
+    <string name="QUICK_PASS_TRANS_SIGN_FREE_AMOUNT">150000</string>
+    <boolean
+        name="IS_PARAM_FILE_EXIST"
+        value="false" />
+    <string name="EDC_REVERSAL_RETRY">3</string>
+    <string name="EDC_SMTP_SSL_PORT">443</string>
+    <string name="COMM_TIMEOUT">30</string>
+
+    <string name="EDC_SMTP_USERNAME"></string>
+
+    <boolean
+        name="QUICK_PASS_TRANS_FLAG"
+        value="false" />
+    <boolean
+        name="TTS_REFUND"
+        value="true" />
+    <string name="EDC_SMTP_HOST"></string>
+
+    <boolean
+        name="SUPPORT_USER_AGREEMENT"
+        value="false" />
+    <boolean
+        name="QUICK_PASS_TRANS_SIGN_FREE_FLAG"
+        value="true" />
+    <boolean
+        name="QUICK_PASS_TRANS_CDCVM_FLAG"
+        value="false" />
+    <string name="EDC_PED_MODE">1</string>
+    <string name="LAN_HOST_IP">116.228.223.216</string>
+    <string name="EDC_SMTP_PASSWORD"></string>
+    <boolean
+        name="TTS_VOID"
+        value="true" />
+    <string name="LAN_HOST_PORT">10021</string>
+    <string name="MOBILE_HOST_PORT">8998</string>
+
+    <string name="KEY_ALGORITHM">3des</string>
+    <string name="EDC_RECEIPT_NUM">2</string>
+    <string name="ACQ_NAME"></string>
+    <string name="EDC_CURRENCY_LIST">English (United States)</string>
+    <string name="MOBILE_PWD"></string>
+    <string name="MOBILE_HOST_PORT_BAK">0</string>
+    <string name="OFFLINE_TC_UPLOAD_TIMES">3</string>
+    <string name="MOBILE_HOST_IP">144.144.21.12</string>
+    <int
+        name="PARAM_VERSION"
+        value="1" />
+    <boolean
+        name="EDC_SMTP_ENABLE_SSL"
+        value="false" />
+    <boolean
+        name="TTS_ADJUST"
+        value="true" />
+    <string name="MOBILE_TEL_NO"></string>
+
+    <string name="MOBILE_HOST_IP_BAK">0.0.0.0</string>
+    <boolean
+        name="QUICK_PASS_TRANS_SWITCH"
+        value="false" />
+    <boolean
+        name="TTS_PREAUTH"
+        value="true" />
+    <string name="EDC_MERCHANT_NAME_EN">BangkokPaymentSolution</string>
+
+    <string name="MOBILE_APN">kbanks</string>
+    <boolean
+        name="OTHTC_VERIFY"
+        value="true" />
+
+    <boolean
+        name="EDC_SUPPORT_KEYIN"
+        value="true" />
+
+    <string name="MOBILE_USER"></string>
+
+    <string name="RABBIT_KEY">3132333435363738</string>
+
+    <boolean
+        name="EDC_ENABLE_E_SIGNATURE"
+        value="false" />
+    <boolean
+        name="EDC_ENABLE_KERRY_API"
+        value="false" />
+    <String name="EDC_KERRY_API_URL">https://pmgw.th.kerryexpress.com/pmgw/edc/response</String>
+    <boolean
+        name="EDC_ENABLE_GRAND_TOTAL"
+        value="false" />
+    <string name="LINKPOS_PROTOCOL">AUTO</string>
+    <string name="LINKPOS_COMM_TYPE">USB_TO_SERIAL</string>
+
+    <boolean
+        name="NEED_UPDATE_PARAM"
+        value="false" />
+    <boolean
+        name="EDC_ENABLE_QR_BARCODE"
+        value="false" />
+
+    <string name="EDC_AID_FILE_UPLOAD_STATUS">2</string>
+    <string name="EDC_CARD_RANGE_FILE_UPLOAD_STATUS">2</string>
+    <string name="EDC_ISSUER_FILE_UPLOAD_STATUS">2</string>
+    <boolean name="EDC_KIOSK_MODE" value="false" />
+    <string name="EDC_KIOSK_TIMEOUT">30</string>
+    <boolean
+        name="EDC_ENABLE_IMG_ON_END_RECEIPT"
+        value="false" />
+    <boolean
+        name="EDC_ENABLE_QR_BARCODE_ALIPAY_WECHAT"
+        value="false" />
+    <boolean
+        name="EDC_SUPPORT_SP200"
+        value="false" />
+    <boolean
+        name="EDC_ENABLE_QR_BARCODE_COD"
+        value="false" />
+    <boolean
+        name="EDC_ENABLE_DOLFIN_MENU"
+        value="true" />
+    <!-- ERM default value for test -->
+    <string name="VF_ERCM_NO_OF_SLIP">2</string>
+    <boolean
+        name="VF_ERCM_ENABLE"
+        value="true" />
+    <boolean
+        name="VF_ERCM_ENABLE_PRINT_AFTER_TXN"
+        value="true" />
+    <boolean
+        name="VF_ERCM_ENABLE_PRINT_PRE_SETTLE"
+        value="true" />
+
+    <boolean
+        name="KBANK_DYNAMIC_OFFLINE_SHOW_MENU"
+        value="true" />
+
+    <string name="EDC_CTLS_TRANS_LIMIT">999999999999</string>
+    <string name="EDC_MAXIMUM_AMOUNT">999999999999</string>
+    <string name="EDC_MINIMUM_AMOUNT">0</string>
+    <boolean
+        name="EDC_AUDITREPORT_RECEIPT_ENABLE"
+        value="true" />
+    <string name="PASSWORD_FAILED_COUNT">0</string>
+
+    <string name="DOLFIN_QR_ON_SCREEN_TIMEOUT">30</string>
+
+</map>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal">
+
+    <!-- 显示金额 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/prompt_base_amount"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <TextView
+            android:id="@+id/value_base_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount_default"
+            android:gravity="bottom|end"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/prompt_ori_tips"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <TextView
+            android:id="@+id/value_ori_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|end"
+            android:text="@string/placeholder"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/prompt_total_amount"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <TextView
+            android:id="@+id/value_total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:text="@string/placeholder"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_value" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:text="@string/prompt_new_tips"
+        android:textColor="@color/primary_text_light"
+        android:textSize="@dimen/font_size_prompt" />
+
+    <com.pax.view.keyboard.CustomKeyboardEditText
+        android:id="@+id/prompt_edit_new_tips"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:gravity="end|center_vertical"
+        android:textSize="@dimen/font_edit_text"
+        android:background="@drawable/edit_frame"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/primary_text_light"
+        android:inputType="text"
+        android:text="@string/amount_default"
+        app:xml="@xml/amount_keyboard_standard"/>
+
+    <Button
+        android:id="@+id/info_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/space_vertical_large"
+        android:background="@drawable/btn_bg_light"
+        android:text="@string/dialog_ok"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="@dimen/font_button" />
+</LinearLayout>

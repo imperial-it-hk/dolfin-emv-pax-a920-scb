@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal">
+
+    <LinearLayout
+        android:id="@+id/ref1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ref1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_ref1"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <EditText
+            android:id="@+id/ref1_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:background="@drawable/edit_frame"
+            android:focusable="true"
+            android:inputType="text"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_edit_text"
+            android:maxLength="20"
+            android:hint="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ref2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ref2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_ref2"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_size_prompt" />
+
+        <EditText
+            android:id="@+id/ref2_input_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:background="@drawable/edit_frame"
+            android:focusable="true"
+            android:inputType="text"
+            android:gravity="end|center_vertical"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_edit_text"
+            android:maxLength="20"
+            android:hint="" />
+    </LinearLayout>
+</LinearLayout>

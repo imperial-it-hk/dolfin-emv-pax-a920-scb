@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/selectacq_item_header" />
+
+    <LinearLayout
+        android:id="@id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/fragment_settle_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/settle_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/space_vertical"
+            android:layout_marginBottom="@dimen/space_vertical"
+            android:layout_marginStart="@dimen/space_horizontal"
+            android:layout_marginEnd="@dimen/space_horizontal"
+            android:background="@drawable/btn_bg_light"
+            android:text="@string/trans_settle"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button" />
+    </LinearLayout>
+
+    <View style="@style/LongLine"/>
+</LinearLayout>

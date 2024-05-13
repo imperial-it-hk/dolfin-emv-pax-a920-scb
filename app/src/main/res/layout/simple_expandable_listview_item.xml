@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:paddingStart="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:textAlignment="viewStart"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        tools:ignore="MissingConstraints,RtlCompat">
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

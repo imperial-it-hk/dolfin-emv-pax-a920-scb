@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horiz_bot_88_pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horiz_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horiz_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horiz_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_rigtht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <Button
+        android:id="@+id/btn_verify_qr_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#F44336"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gl_horiz_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_rigtht"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/gl_horiz_bot_88_pcnt" />
+
+    <TextView
+        android:id="@+id/txv_verify_qr_dispStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/gl_horiz_mid"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_rigtht"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left" />
+
+    <TextView
+        android:id="@+id/txv_verify_qr_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_rigtht"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/gl_horiz_mid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

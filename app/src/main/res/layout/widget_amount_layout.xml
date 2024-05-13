@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <Button
+        android:id="@+id/button_amount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="@dimen/font_size_headline"
+        android:gravity="end|center_vertical|center_horizontal" />
+
+</LinearLayout>

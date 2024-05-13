@@ -1,0 +1,50 @@
+[
+  {
+    "aucRdClssTxnLmt": "000000150001",
+    "aucRdCVMLmt": "000000150001",
+    "aucRdClssFLmt": "000000000000",
+    "aucTermFLmt": "000000000000",
+    "aucProgramId":"00000001",
+    "ucPrgramIdLen": 8,
+    "ucRdClssFLmtFlg": 1,
+    "ucRdClssTxnLmtFlg": 1,
+    "ucRdCVMLmtFlg": 1,
+    "ucTermFLmtFlg": 1,
+    "ucStatusCheckFlg": 1,
+    "ucAmtZeroNoAllowed": 1,
+    "ucDynamicLimitSet": 255,
+    "ucRFU": 0
+  },
+  {
+    "aucRdClssTxnLmt": "000000150001",
+    "aucRdCVMLmt": "000000150001",
+    "aucRdClssFLmt": "000000000000",
+    "aucTermFLmt": "000000000000",
+    "aucProgramId":"00000006",
+    "ucPrgramIdLen": 8,
+    "ucRdClssFLmtFlg": 1,
+    "ucRdClssTxnLmtFlg": 1,
+    "ucRdCVMLmtFlg": 1,
+    "ucTermFLmtFlg": 1,
+    "ucStatusCheckFlg": 1,
+    "ucAmtZeroNoAllowed": 1,
+    "ucDynamicLimitSet": 6,
+    "ucRFU": 0
+  },
+  {
+    "aucRdClssTxnLmt": "000000150001",
+    "aucRdCVMLmt": "000000150001",
+    "aucRdClssFLmt": "000000000000",
+    "aucTermFLmt": "000000000000",
+    "aucProgramId":"00000011",
+    "ucPrgramIdLen": 8,
+    "ucRdClssFLmtFlg": 1,
+    "ucRdClssTxnLmtFlg": 1,
+    "ucRdCVMLmtFlg": 1,
+    "ucTermFLmtFlg": 1,
+    "ucStatusCheckFlg": 1,
+    "ucAmtZeroNoAllowed": 1,
+    "ucDynamicLimitSet": 11,
+    "ucRFU": 0
+  }
+]

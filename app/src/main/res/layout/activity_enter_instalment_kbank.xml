@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/promo_type_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_vertical">
+
+        <TextView
+            android:id="@+id/instalment_promo_type_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:text="@string/label_type"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="@dimen/font_edit_text" />
+
+        <Spinner
+            android:id="@+id/instalment_promo_type_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/supplier_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/instalment_supplier_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.1"
+            android:text="@string/label_supplier"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="@dimen/font_edit_text"
+            app:autoSizeTextType="uniform" />
+
+        <EditText
+            android:id="@+id/instalment_supplier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_horizontal_small"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="@dimen/font_edit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/product_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/instalment_product_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:text="@string/label_product"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="@dimen/font_edit_text" />
+
+        <EditText
+            android:id="@+id/instalment_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="9"
+            android:textSize="@dimen/font_edit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/serial_num_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/instalment_serial_num_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.4"
+            android:text="@string/label_serial_num_short"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="@dimen/font_edit_text" />
+
+        <EditText
+            android:id="@+id/instalment_serial_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="18"
+            android:textSize="@dimen/font_edit_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/terms_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/instalment_terms_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.4"
+            android:text="@string/label_terms"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="@dimen/font_edit_text" />
+
+        <EditText
+            android:id="@+id/instalment_terms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textSize="@dimen/font_edit_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/amount_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/instalment_amount_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.4"
+            android:text="@string/label_amount"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="@dimen/font_edit_text" />
+
+        <EditText
+            android:id="@+id/instalment_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/font_edit_text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/instalment_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/space_vertical"
+            android:background="@drawable/btn_bg_light"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button" />
+    </LinearLayout>
+
+</LinearLayout>

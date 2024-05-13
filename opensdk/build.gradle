@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+
+def name = 'edcOpenAPI'
+def docDest = 'build/doc/'
+def ver = '1.3'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName ver
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+//task javadoc(type: Javadoc){
+//    delete(docDest + name)
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//    destinationDir = file(docDest + name)
+//    options.memberLevel = JavadocMemberLevel.PROTECTED
+//    options.encoding = "UTF-8"
+//    exclude '**/BuildConfig.java', '**/R.java', '**/Constants.java', '**/MessageUtils.java'
+//}
+
+afterEvaluate {
+//    javadoc.classpath += files(android.libraryVariants.collect { variant ->
+//        variant.javaCompile.classpath.files
+//    })
+}
+
+task deleteOld(type: Delete) {
+    delete 'build/libs/'
+}
+
+task makeJar(type: Jar, dependsOn:[deleteOld]) {
+    baseName name
+    version = ver
+    from('build/intermediates/classes/release/com/pax/edc/opensdk')
+    into('com/pax/edc/opensdk/')
+    exclude('android/',  'BuildConfig.class', 'R.class', 'Constants.class', 'MessageUtils.class')
+    exclude {
+        it.name.startsWith('R$');
+    }
+    exclude {
+        it.name.startsWith('Constants$');
+    }
+}
+
+project.afterEvaluate {
+    tasks.matching {
+        it.name.contains('packageReleaseResources')
+    }.each { task ->
+//        task.dependsOn(javadoc, makeJar, zip)  // 任务依赖：执行task之前需要执行dependsOn指定的任务
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    compileOnly 'androidx.annotation:annotation:1.0.2'
+}
+
+task zip(type:Zip) {
+    delete('../' + name + '-' + ver + '.zip')
+    archiveName name + '-' + ver + '.zip'
+    from(docDest, 'build/libs/')
+    destinationDir file('../')
+}

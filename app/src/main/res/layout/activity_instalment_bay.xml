@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:id="@+id/constraintLayout">
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_10"
+        app:layout_constraintGuide_percent="0.02" app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_v_50"
+            app:layout_constraintGuide_percent="0.5"
+    />
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_90"
+            app:layout_constraintGuide_percent="0.9"/>
+<!--    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/layout_currency" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:background="@color/colorBPSDarkGray"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_main_body_h_10" android:layout_marginBottom="8dp">
+
+        <TextView
+                android:text="@string/include_numpad_currency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewNumpadCurrency"
+                android:textAlignment="textEnd" android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#FFFFFF" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/layout_body"
+            app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_main_body_h_90"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/reqAmt4"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="*"
+            android:textColor="@color/accent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/instalmentTerms"
+            app:layout_constraintTop_toBottomOf="@+id/instalmentInterest" />
+
+        <TextView
+            android:id="@+id/reqAmt2"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="*"
+            android:textColor="@color/accent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/instalmentAmount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/reqAmt3"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="*"
+            android:textColor="@color/accent"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/instalmentInterest"
+            app:layout_constraintTop_toBottomOf="@+id/instalmentAmount" />
+
+        <TextView
+            android:id="@+id/amountLabel"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/instalment_amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="29sp"
+            app:autoSizeMaxTextSize="29sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/instalmentAmount"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:focusedByDefault="true"
+            android:hint="@string/instalment_amount_hint"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingBottom="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/primary_dark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/amountLabel"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/interestLabel"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/instalment_interest"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="29sp"
+            app:autoSizeMaxTextSize="29sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountLabel" />
+
+        <EditText
+            android:id="@+id/instalmentInterest"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:focusedByDefault="true"
+            android:hint="@string/instalment_interest_hint"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:maxLength="5"
+            android:paddingBottom="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/primary_dark"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/interestLabel"
+            app:layout_constraintTop_toBottomOf="@+id/instalmentAmount" />
+
+        <TextView
+            android:id="@+id/termsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="35dp"
+            android:paddingBottom="0dp"
+            android:text="@string/instalment_terms"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="29sp"
+            app:autoSizeMaxTextSize="29sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/interestLabel" />
+
+        <EditText
+            android:id="@+id/instalmentTerms"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="@string/instalment_terms_hint"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingBottom="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/primary_dark"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/termsLabel"
+            app:layout_constraintTop_toBottomOf="@+id/instalmentInterest" />
+
+        <TextView
+            android:id="@+id/serialNumLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/instalment_serial_num"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
+            android:textColor="@color/colorBPSDarkGray"
+            android:textSize="29sp"
+            app:autoSizeMaxTextSize="29sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termsLabel" />
+
+        <EditText
+            android:id="@+id/instalmentSerialNum"
+            android:layout_width="280dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/instalment_serial_num_hint"
+            android:inputType="numberDecimal"
+            android:maxLength="20"
+            android:paddingBottom="3dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="?attr/editTextColor"
+            android:textColorLink="@color/primary_dark"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/serialNumLabel" />
+
+        <ImageButton
+            android:id="@+id/imageButtonScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            app:layout_constraintStart_toEndOf="@+id/instalmentSerialNum"
+            app:layout_constraintTop_toBottomOf="@+id/serialNumLabel"
+            app:srcCompat="@drawable/scanner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline_main_body_h_90" android:id="@+id/layout_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+    >
+
+        <include android:layout_width="0dp" android:layout_height="0dp"
+                 layout="@layout/include_button_cancel_ok" app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="1.0"
+                 app:layout_constraintVertical_bias="1.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

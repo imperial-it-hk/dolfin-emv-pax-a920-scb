@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/space_horizontal"
+        android:paddingStart="@dimen/space_horizontal">
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_size_key" />
+
+        <com.pax.view.keyboard.CustomKeyboardEditText
+            android:id="@+id/amount_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_vertical"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:focusable="true"
+            android:gravity="end|center_vertical"
+            android:inputType="text"
+            android:text="@string/placeholder"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_size_headline"
+            app:autoSize="true"
+            app:keepKeyboardOn="true"
+            app:xml="@xml/amount_keyboard_large" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:background="@color/background"
+        android:visibility="visible" />
+
+</LinearLayout>

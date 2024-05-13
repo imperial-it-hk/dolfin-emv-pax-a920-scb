@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.pax.view.widget.QRCoverView
+        android:id="@+id/cover_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cornerColor="@color/primary"
+        app:cornerLength="@dimen/dimen_16"
+        app:cornerOutside="false"
+        app:cornerWidth="@dimen/dimen_3"
+        app:laserColor="@color/primary"
+        app:laserVisible="true"
+        app:outsideBackgroundColor="#00000000"
+        app:scanRectHeight="@dimen/dimen_200"
+        app:scanRectWidth="@dimen/dimen_200" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_above="@+id/split"
+            android:background="@color/primary"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_16"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_button"
+            tools:text="Amount:THB100.00" />
+
+        <TextView
+            android:id="@+id/split"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/button_container"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_dark"
+                android:text="@string/pwd_cancel"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_button" />
+
+            <Button
+                android:id="@+id/ok_btn"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_light"
+                android:text="@string/dialog_ok"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,1119 @@
+[
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "AMEX",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType": "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "KPLUS",
+    "issuerName" : "PROMPTPAY"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "VISA-CARD",
+    "priority" : 2
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "VISA-BDMS",
+    "priority" : 2
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "MASTERCARD",
+    "priority" : 2
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "KBank-MC",
+    "priority" : 2
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "CENTRAL-MC",
+    "priority" : 2
+  },
+  {
+    "transType" : "SALE",
+    "acquirerName" : "DCC",
+    "issuerName" : "KBank-VISA",
+    "priority" : 2
+  },
+  
+
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "AMEX",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "OFFLINE_TRANS_SEND",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "AMEX",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType": "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "REFUND",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "AMEX",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType": "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "ADJUST",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "AMEX",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType": "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "KBANK",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "PREAUTHORIZATION",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "SMRTPAY",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_SMART_PAY",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_PRODUCT_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  
+
+
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_VOUCHER_CREDIT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_DISCOUNT",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "VISA-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM_BDMS",
+    "issuerName" : "VISA-BDMS"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "MASTERCARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "JCB-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "AMEX-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "UnionPay"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "TPN-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "CENTRAL-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-MC"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-JCB"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "K-UNIONPAY"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "KBank-VISA"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "REDEEM",
+    "issuerName" : "XpressCash-UP"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "TPN",
+    "issuerName" : "PROMPT-CARD"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+  {
+    "transType" : "KBANK_REDEEM_INQUIRY",
+    "acquirerName" : "TPN",
+    "issuerName" : "VISA-LOCAL"
+  },
+
+
+
+  {
+    "transType" : "GET_QR_KPLUS",
+    "acquirerName" : "KPLUS",
+    "issuerName" : "KPLUS"
+  },
+  {
+    "transType" : "GET_QR_KPLUS",
+    "acquirerName" : "KPLUS",
+    "issuerName" : "PROMPTPAY"
+  },
+  {
+    "transType" : "QR_INQUIRY",
+    "acquirerName" : "KPLUS",
+    "issuerName" : "KPLUS"
+  },
+  {
+    "transType" : "QR_INQUIRY",
+    "acquirerName" : "KPLUS",
+    "issuerName" : "PROMPTPAY"
+  },
+
+
+
+  {
+    "transType" : "GET_QR_WECHAT",
+    "acquirerName" : "WECHAT",
+    "issuerName" : "WECHAT"
+  },
+  {
+    "transType" : "QR_INQUIRY_WECHAT",
+    "acquirerName" : "WECHAT",
+    "issuerName" : "WECHAT"
+  },
+
+
+
+  {
+    "transType" : "GET_QR_ALIPAY",
+    "acquirerName" : "ALIPAY",
+    "issuerName" : "ALIPAY"
+  },
+  {
+    "transType" : "QR_INQUIRY_ALIPAY",
+    "acquirerName" : "ALIPAY",
+    "issuerName" : "ALIPAY"
+  },
+
+
+  {
+    "transType": "BAY_INSTALMENT",
+    "acquirerName": "BAY_INSTALLMENT",
+    "issuerName": "CENTRAL-MC"
+  },
+
+
+  {
+    "transType": "BAY_REDEEM_FREEDOM",
+    "acquirerName": "BAY_INSTALLMENT",
+    "issuerName": "CENTRAL-MC"
+  },
+
+
+  {
+    "transType": "BAY_REDEEM_CATALOGUE",
+    "acquirerName": "BAY_INSTALLMENT",
+    "issuerName": "CENTRAL-MC"
+  },
+
+
+  {
+    "transType" : "AMEX_INSTALMENT",
+    "acquirerName" : "AMEX_EPP",
+    "issuerName" : "AMEX-CARD"
+  } ,
+
+
+  {
+    "transType" : "GET_T1C_MEMBER_ID",
+    "acquirerName" : "AYCAP_T1C",
+    "issuerName" : "CENTRAL-MC"
+  }
+]

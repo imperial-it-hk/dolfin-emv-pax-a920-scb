@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation" >
+
+    <!-- 系统设置 -->
+    <string name="settings_title">Config</string>
+    <string name="settings_menu_communication_parameter">Comm</string>
+    <string name="settings_menu_edc_parameter">EDC</string>
+    <string name="settings_menu_issuer_parameter">Issuer</string>
+    <string name="settings_menu_acquirer_parameter">Acquirer</string>
+    <string name="settings_menu_keyManage">Key</string>
+    <string name="settings_menu_pwd_manage">Password</string>
+    <string name="settings_menu_otherManage">Other</string>
+    <string name="settings_menu_linkposManage">LinkPOS</string>
+    <string name="settings_scb_config">SCB Config</string>
+    <string name="settings_amex_config">AMEX Config</string>
+
+    <!-- 商户参数 -->
+
+    <string name="terminal_date_time" tools:keep="@string/terminal_date_time">Terminal Date/Time:</string>
+    <string name="currency_list">Currency:</string>
+    <string name="acquirer_list">Select Acquirer:</string>
+
+    <!-- 系统设置的通讯参数 -->
+    <string name="commParam_menu_comm_mode_choose">Please Choose Comm Mode:</string>
+    <string name="commParam_menu_comm_mode">Communication Type</string>
+    <string name="commParam_menu_comm_timeout_prompt">Please Choose Comm Timeout:</string>
+    <string name="commParam_menu_comm_timeout">Comm Timeout</string>
+    <string name="communication_menu_mobile">Mobile Network</string>
+    <string name="communication_menu_wifi">Wifi</string>
+    <string name="edc_merchant_name">Merchant Name</string>
+    <string name="edc_merchant_address">Merchant Address</string>
+    <string name="edc_merchant_address1">Merchant Address1</string>
+    <string name="edc_connect_time">Connect time</string>
+    <string name="edc_ped_mode">Ped mode</string>
+    <string name="edc_ped_mode_prompt">Please Choose Ped mode:</string>
+    <string name="edc_receipt_no">Receipt #</string>
+    <string name="edc_stan_no">STAN No.</string>
+    <string name="edc_trace_no">TRACE No.</string>
+    <string name="edc_num_of_slip_linepay">Number of Slip</string>
+
+    <string name="edc_enable_tip">Enable Tip</string>
+    <string name="edc_enable_tip_adjustment">Enable Tip Adjustment</string>
+    <string name="edc_enable_paperless">Enable Paperless</string>
+    <string name="edc_smtp_host_name">SMTP Host</string>
+    <string name="edc_smtp_port">SMTP Port</string>
+    <string name="edc_smtp_username">SMTP Auth User Name</string>
+    <string name="edc_smtp_password">SMTP Auth Password</string>
+    <string name="edc_smtp_enable_ssl">SMTP Enable SSL</string>
+    <string name="edc_smtp_ssl_port">SMTP SSL Port</string>
+    <string name="edc_smtp_from">SMTP From Address</string>
+    <string name="edc_enable_user_agreement">Show Agreement</string>
+    <string name="edc_enable_confirm_proc">Enable Confirm Process</string>
+    <string name="edc_enable_refund">Enable Refund Menu</string>
+    <string name="edc_enable_offline_menu">Enable Offline Menu</string>
+
+    <string name="edc_enable_e_signature">Enable E-Signature</string>
+    <string name="edc_enable_kerry_api">Enable Kerry API</string>
+    <string name="edc_kerry_api_url_title">Kerry API URL</string>
+    <string name="edc_enable_grand_total">Print Grand Total</string>
+    <string name="edc_default_camera">Default Camera</string>
+    <string name="edc_default_camera_prompt">Please Choose Default Camera:</string>
+    <string name="edc_enable_qr_barcode">Show QR/Barcode in receipt</string>
+    <string name="edc_enable_img_end_receipt">Print Ads on Slip</string>
+    <string name="edc_enable_qr_barcode_alipay_wechat">Print QR on Slip Ali/WeChat</string>
+    <string name="edc_enable_qr_barcode_cod">Print QR COD</string>
+
+    <string name="commParam_menu_apn_choose">Please Choose APN name:</string>
+
+    <string name="edc_enable_contactless">Enable Contactless</string>
+    <string name="edc_enable_contactless_visa">Enable Contactless VISA</string>
+    <string name="edc_enable_contactless_master">Enable Contactless MASTERCARD</string>
+    <string name="edc_enable_contactless_jcb">Enable Contactless JCB</string>
+    <string name="edc_enable_contactless_up">Enable Contactless UP</string>
+    <string name="edc_enable_contactless_tpn">Enable Contactless TPN</string>
+    <string name="edc_enable_contactless_amex">Enable Contactless AMEX</string>
+
+    <string name="edc_enable_keyin">Enable Manual Input</string>
+    <string name="edc_enable_preauth">Enable Pre-Authorize</string>
+    <string name="edc_vpid_with_stand">Void with Stand</string>
+
+    <string name="edc_tip_adjust_percent">Max Tip Adjust Percent (%)</string>
+
+
+    <string name="edc_enable_kiosk_mode">Enable Kiosk Mode</string>
+    <string name="edc_kiosk_mode_timeout">Kiosk Timeout</string>
+
+    <string name="edc_enable_loggly">Enable Loggly</string>
+
+    <!-- 通讯参数的移动网络 -->
+    <string name="commParam_menu_mobile_wifi_keep_alive">Keep Alive</string>
+    <string name="commParam_menu_mobile_dial_no">AP</string>
+    <string name="commParam_menu_mobile_apn">APN</string>
+    <string name="commParam_menu_mobile_need_user">Need User</string>
+    <string name="commParam_menu_mobile_username">User Name</string>
+    <string name="commParam_menu_mobile_user_password">User Password</string>
+    <string name="commParam_menu_mobile_apn_system">APN System</string>
+    <string name="commParam_menu_mobile_apn_transaction">APN Transaction</string>
+
+    <!-- wifi status -->
+    <string name="wifi_scanning">Scanning&#8230;</string>
+    <string name="wifi_connecting">Connecting&#8230;</string>
+    <string name="wifi_authenticating">Authenticating&#8230;</string>
+    <string name="wifi_getting_ip">Getting IP&#8230;</string>
+    <string name="wifi_connected">Connected</string>
+    <string name="wifi_paused">Paused</string>
+    <string name="wifi_disconnecting">Disconnecting&#8230;</string>
+    <string name="wifi_disconnected">Disconnected</string>
+    <string name="wifi_failed">Failed</string>
+
+    <string name="open_wifi">Open Wifi Setting</string>
+
+    <string name="long_connect">Long Connect</string>
+    <string name="short_connect">Short Connect</string>
+
+    <!-- 系统设置的终端密钥管理 -->
+    <string name="keyManage_menu_key_des_type_choose">Please Choose key Algorithm:</string>
+
+
+    <string name="keyManage_menu_tmk_index">Master Key Index(0&#8211;99)</string>
+    <string name="keyManage_menu_des_type">DES Algorithm</string>
+    <string name="keyManage_menu_key_value">Import Key Manually</string>
+    <string name="keyManage_menu_tmk_index_no">Master Key Index(0&#8211;99)</string>
+    <string name="keyManage_menu_tmk_value">Master Key</string>
+    <string name="keyManage_menu_tpk_value">PIN Key</string>
+    <string name="keyManage_menu_tak_value">MAC Key</string>
+    <string name="keyManage_menu_index_err">Please Input Key Index</string>
+    <string name="keyManage_menu_update_key_success">Update Key Success</string>
+    <string name="keyManage_menu_update_key_error">Update Key Fail</string>
+
+    <!-- 系统设置的密码管理 -->
+
+    <string name="pwdManage_system">Administrator Password</string>
+    <string name="pwdManage_safe">Security Password</string>
+    <string name="input_old_password">Please Input Old Password</string>
+    <string name="input_new_password">Please Input New Password</string>
+    <string name="input_again_new_password">Confirm New Password</string>
+    <string name="error_input_length">Length Error</string>
+    <string name="error_old_password">Old Password Error</string>
+    <string name="error_password">รหัสผ่านไม่ถูกต้อง</string>
+    <string name="error_password_no_same">Password Not Match\nPlease Input Again</string>
+    <string name="password_modify_success">Modify Password Success</string>
+
+    <!-- 系统设置的其他管理 -->
+    <string name="otherManage_menu_clear_func">Clear Function</string>
+    <string name="otherManage_menu_download">Download Function</string>
+    <string name="otherManage_menu_para_print">Parameter Print</string>
+    <string name="otherManage_menu_date_time">System Date Time</string>
+
+    <string name="om_clearTrade_menu_reversal">Clear Reversal</string>
+    <string name="om_clearTrade_menu_trade_voucher">Clear Trade Voucher</string>
+    <string name="om_clearTrade_menu_key">Clear Key</string>
+
+    <string name="selfTest_succ">SelfTest Success</string>
+
+    <string name="om_download_menu_echo_test">Echo Test</string>
+
+    <string name="om_paramPrint_menu_print_aid_para">AID Parameter</string>
+    <string name="om_paramPrint_menu_print_capk_para">CAPK Parameter</string>
+    <string name="om_paramPrint_menu_print_card_range_list">Card Range List</string>
+
+    <!--LinkPOS Manage Menu-->
+    <string name="linkpos_protocol">LinkPOS Protocol</string>
+    <string name="linkposManage_menu_protocol_prompt">Choose LinkPOS Protocol:</string>
+    <string name="linkpos_comm">LinkPOS Communication Type</string>
+    <string name="linkposManage_menu_comm_prompt">Choose LinkPOS Comm Type:</string>
+
+    <!-- 响应码错误提示语 -->
+    <string name="error_trade">Trade Fail</string>
+    <string name="response_00">รายการอนุมัติ</string>
+    <string name="response_01">ติดต่อธนาคารผู้ออกบัตร</string>
+    <string name="response_02">ติดต่อธนาคารผู้ออกบัตร</string>
+    <string name="response_03">รหัสร้านค้าผิด</string>
+    <string name="response_04">รายการไม่อนุมัติ</string>  <!--The Card Is Confiscated-->
+    <string name="response_05">รายการไม่อนุมัติ</string> <!--Cardholder Authentication Fail-->
+    <string name="response_06">ระบบขัดข้อง</string>
+    <string name="response_07">PICK UP CARD, SPECIAL CONDITION</string>
+    <string name="response_08">HONOUR WITH IDENTIFICATION</string>
+    <string name="response_09">กำลังดำเนินการ</string>
+    <string name="response_10">APPROVED, PARTIAL</string>
+    <string name="response_11">APPROVED, VIP</string>
+
+    <string name="response_12">รายการไม่ถูกต้อง</string>
+    <string name="response_13">จำนวนเงินผิด</string>
+    <string name="response_14">หมายเลขบัตรไม่ถูกต้อง</string>
+    <string name="response_15">ไม่รับบัตรนี้</string>
+    <string name="response_16">APPROVED</string>
+    <string name="response_17">OPERATOR CANCELLED</string>
+    <string name="response_18">CUSTOMER DISPUTE</string>
+    <string name="response_19">กรุณาทำรายการใหม่</string>
+    <string name="response_20">INVALID RESPONSE</string>
+
+    <string name="response_21">ไม่พบรายการ</string> <!--The Card Is Not Initialized or Sleeping Card-->
+    <string name="response_22">SUSPECTED MALFUNCTION</string>
+    <string name="response_23">UNACCEPTABLE TRANSACTION FEE</string>
+    <string name="response_24">FILE UPDATE NOT SUPPORTED</string>
+    <string name="response_25">หมายเลขเครื่องผิด</string> <!--No Original Trade, Please Contact Issuer-->
+    <string name="response_26">DUPLICATE RECORD</string>
+    <string name="response_27">FILE UPDATE EDIT ERROR</string>
+    <string name="response_28">FILE UPDATE FILE LOCKED</string>
+
+    <string name="response_30">รูปแบบของข้อมูลไม่ถูกต้อง\nติดต่อ ธนาคาร</string> <!--Please Retry-->
+    <string name="response_31">หมายเลขบัตรผิด</string>
+    <string name="response_32">COMPLETED PARTIALLY REPRINT TO VERIFY</string>
+    <string name="response_33">บัตรหมดอายุ</string>
+    <string name="response_34">ไม่อนุมัติ</string>
+    <string name="response_35">CONTACT ACQUIRER</string>
+    <string name="response_36">RESTRICTED CARD, PICK UP</string>
+    <string name="response_37">CALL ACQUIRER SECURITY</string>
+    <string name="response_38">รหัสผิดเกินจำนวนครั้งที่กำหนด</string>
+    <string name="response_39">บัตรถูกยกเลิก</string>
+
+    <string name="response_40">ไม่รองรับ</string>
+    <string name="response_41">ติดต่อธนาคารเจ้าของบัตร</string> <!--Report Loss Card,Please Confiscate(POS)-->
+    <string name="response_42">NO UNIVERSAL ACCOUNT</string>
+    <string name="response_43">ติดต่อธนาคารเจ้าของบัตร</string> <!--Stolen Card, Please Confiscate-->
+    <string name="response_44">NO INVESTMENT ACCOUNT</string>
+    <string name="response_45">ไม่อนุญาตให้รูดบัตร</string>
+
+    <string name="response_51">รายการไม่อนุมัติ\n (กรุณาติดต่อธนาคารผู้ออกบัตร)</string> <!--Available Balance Is Insufficient-->
+    <string name="response_52">NO CHECK ACCOUNT</string>
+    <string name="response_53">NO SAVINGS ACCOUNT</string>
+    <string name="response_54">บัตรหมดอายุ</string> <!--The Card Is Out Of Date-->
+    <string name="response_55">รหัสไม่ถูกต้อง</string> <!--Password Error-->
+    <string name="response_56">ไม่มีหมายเลขบัตรในระบบ</string>
+    <string name="response_57">รายการไม่อนุมัติ</string>
+    <string name="response_58">ติดต่อธนาคารกสิกรไทย</string> <!--Issuer Do Not Allow The Card To Make This Deal In The POS-->
+    <string name="response_59">รายการไม่อนุมัติ</string>
+
+    <string name="response_60">CONTACT ACQUIRER CONTACT BANK</string>
+    <string name="response_61">รายการไม่อนุมัติ</string>
+    <string name="response_62">RESTRICTED CARD</string>
+    <string name="response_63">SECURITY VIOLATION</string>
+    <string name="response_64">ORIGINAL AMOUNT INCORRECT</string>
+    <string name="response_65">ทำรายการเกินจำนวนครั้งที่กำหนด</string>
+    <string name="response_66">CALL ACQUIRER SECURITY</string>
+    <string name="response_67">HARD CAPTURE</string>
+    <string name="response_68">ระบบเน็ตเวิร์คขัดข้อง</string>
+
+    <string name="response_70">CONTACT CARD  ISSUER</string>
+    <string name="response_71">PIN NOT CHANGE</string>
+    <!--<string name="response_72">PRODUCT EXPIRED</string>
+    <string name="response_73">TERM MISMATCH</string>
+    <string name="response_74">PROD NOT FOUND</string>-->
+    <string name="response_75">ใส่รหัสผิดเกินกำหนด</string>
+
+    <string name="response_76">รหัสสินค้าผิด</string>
+    <string name="response_77">INTERVENE, BANK APPROVAL REQUIRED</string>
+    <string name="response_78">INTERVENE, BANK APPROVAL REQUIRED</string>
+    <string name="response_79">ACCOUNT IN BLACK LIST</string>
+
+    <string name="response_80">CREDIT ISSUER UNAVAILABLE</string>
+    <string name="response_81">PIN CRYPTOGRAPHIC ERROR</string>
+    <string name="response_82">INCORRECT LSV</string>
+    <string name="response_84">INVALID AUTHORIZATION LIFE CYCLE</string>
+    <string name="response_85">NOT DECLINE</string>
+    <string name="response_86">CANT VERIFY PIN</string>
+    <string name="response_87">APPROVE, NO CASHBACK ALLOW</string>
+    <string name="response_88">CRYPTOGRAPHIC FAILURE</string>
+    <string name="response_89">UNACCEPTABLE PIN</string>
+
+    <string name="response_90">ติดต่อ Merchant Service\n[02&#8211;888&#8211;8822*833]</string>
+    <string name="response_91">การสื่อสารระหว่างธนาคารขัดข้อง</string>
+    <string name="response_92">ระบบเน็ตเวิร์คขัดข้อง</string>
+    <string name="response_93">VIOLATION OF LAW</string>
+    <string name="response_94">หมายเลขรายการซ้ำ</string>
+    <string name="response_95">กำลังส่งรายการ</string>
+    <string name="response_96">ติดต่อ Merchant Service\n[02&#8211;888&#8211;8822*833]</string>
+    <string name="response_97">ATM/POS TERMINAL NUMBER CANNOT BE LOCATED</string>
+    <string name="response_98">ติดต่อ Merchant Service\n[02&#8211;888&#8211;8822*833]</string>
+    <string name="response_99">ติดต่อ Merchant Service\n[02&#8211;888&#8211;8822*833]</string>
+
+    <string name="response_C1">ControlLimit ไม่ได้ตั้งค่าจำนวนเงินจำกัดต่อรายการ</string>
+    <string name="response_C2">ControlLimit ไม่ได้ตั้งค่าจำนวนเงินจำกัดต่อเดือน</string>
+    <string name="response_C5">ControlLimit ไม่พบหมายเลขร้านค้า</string>
+    <string name="response_C6">ControlLimit หมายเลขร้านค้าไม่เปิดใช้งาน</string>
+    <string name="response_C9">ControlLimit จำนวนเงินมากกว่าที่กำหนด</string>
+    <string name="response_CA">ControlLimit จำนวนเงินมากกว่าที่กำหนดต่อวัน</string>
+    <string name="response_CB">ControlLimit จำนวนเงินมากกว่าที่กำหนด ต่อเดือน</string>
+    <string name="response_CF">ControlLimit ระบบขัดข้อง</string>
+
+    <string name="response_N1">Not DCC Eligible</string>
+    <string name="response_1A">ADDITIONAL AUTHENTICATION REQUIRED</string>
+
+    <string name="response_Q1">รหัสไม่ถูกต้อง</string>
+    <string name="response_Y1">รายการอนุมัติ</string>
+    <string name="response_Y1_str">Y1</string>
+    <string name="response_Z1">EMV Decline</string>
+    <string name="response_Y2">APPROVED</string>
+    <string name="response_Z2">DECLINED</string>
+    <string name="response_Y3">รายการอนุมัติ</string>
+    <string name="response_Y3_str">Y3</string>
+    <string name="response_Z3">EMV Decline</string>
+    <string name="response_NA">NO UPDATE</string>
+    <string name="response_P0">ERROR SERIAL NO.</string>
+    <string name="response_XY">Duplicate Trans</string>
+    <string name="response_XX">NO DCC SGD REQ</string>
+    <string name="response_asterisk">NO RESPONSE CODE</string>
+
+    <string name="response_ER">HOST NOT ACCEPT</string>
+    <string name="response_L1">คะแนนไม่เพียงพอ</string>
+    <string name="response_L2">รหัสสินค้าไม่ถูกต้อง</string>
+    <string name="response_L3">โปรโมชันหมดอายุ</string>
+    <string name="response_L4">จำนวนเงินที่จะแลกคะแนนไม่ถูกต้อง</string>
+    <string name="response_L5">ทำรายการเกินจำนวนครั้งที่กำหนด</string>
+
+    <string name="response_unknown">System Error</string>
+
+    <!--  -->
+    <string name="sale_set">Sale</string>
+    <string name="preAuthorization">Pre-authorization</string>
+    <string name="support">Support</string>
+    <string name="not_support">Not Support</string>
+    <string name="need">Need</string>
+    <string name="not_need">Not Need</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="form">Blank Form</string>
+    <string name="new_form">New</string>
+    <string name="input_len_err">Input Length Error</string>
+    <string name="input_has_chinese">Input Has Chinese</string>
+    <string name="input_err">Input Error</string>
+    <string name="transType_sale">Sale</string>
+    <string name="transType_void">Void</string>
+    <string name="transType_refund">Refund</string>
+    <string name="transType_auth">Pre-authorization</string>
+    <string name="transType_offline">Offline</string>
+    <string name="transType_print">Print</string>
+    <string name="transType_manage">Manage</string>
+    <string name="transType_others">Others</string>
+
+</resources>

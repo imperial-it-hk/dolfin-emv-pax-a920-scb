@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/prompt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginStart="@dimen/space_horizontal"
+        android:layout_marginEnd="@dimen/space_horizontal"
+        android:gravity="center"
+        android:text="@string/prompt_pin"
+        android:textColor="@color/primary_text_light"
+        android:textSize="@dimen/font_size_prompt" />
+
+    <TextView
+        android:id="@+id/pwd_input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_horizontal"
+        android:layout_marginEnd="@dimen/space_horizontal"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:background="@drawable/edit_frame"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:textColor="@color/primary_text_light"
+        android:textSize="@dimen/font_edit_text" />
+
+    <EditText
+        android:id="@+id/pwd_input_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_horizontal"
+        android:layout_marginEnd="@dimen/space_horizontal"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:background="@drawable/edit_frame"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:textColor="@color/primary_text_light"
+        android:textSize="@dimen/font_edit_text"
+        android:visibility="visible"
+        android:hint="" />
+
+    <TextView
+        android:id="@+id/prompt_no_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/space_vertical_small"
+        android:text="@string/prompt_no_pin"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="@dimen/font_size_hint" />
+
+    <com.pax.view.keyboard.CustomKeyboardView
+        style="@style/CustomKeyboardView"
+        android:id="@+id/pwd_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

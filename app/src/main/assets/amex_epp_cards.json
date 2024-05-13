@@ -1,0 +1,17 @@
+[
+  {
+    "name":"AMEX_EPP_1",
+    "panRangeLow":"3763000000",
+    "panRangeHigh":"3763099999"
+  },
+  {
+    "name":"AMEX_EPP_2",
+    "panRangeLow":"3763100000",
+    "panRangeHigh":"3763199999"
+  },
+  {
+    "name":"AMEX_EPP_3",
+    "panRangeLow":"3773000000",
+    "panRangeHigh":"3773099999"
+  }
+]

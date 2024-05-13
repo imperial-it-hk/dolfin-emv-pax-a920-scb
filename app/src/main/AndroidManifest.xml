@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="GoogleAppIndexingWarning"
+    android:installLocation="internalOnly"
+    package="com.pax.edc">
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="com.pax.permission.MAGCARD"/>
+    <uses-permission android:name="com.pax.permission.PED"/>
+    <uses-permission android:name="com.pax.permission.ICC"/>
+    <uses-permission android:name="com.pax.permission.PICC"/>
+    <uses-permission android:name="com.pax.permission.PRINTER"/>
+    <uses-permission android:name="com.pax.pay.service.PaymentService" />
+    <uses-permission android:name="com.pax.appstore.PaxAppStoreService" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.pax.pay.app.FinancialApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/kaset_logo"
+        android:label="${APP_NAME}"
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+
+        <activity
+            android:name="com.pax.pay.SplashActivity"
+            android:label="${APP_NAME}"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+                <!--<category android:name="android.intent.category.HOME" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--<meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />-->
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.MainActivity"
+            android:label="${APP_NAME}"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor"
+            android:launchMode="singleTask">
+            <!--<meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />-->
+        </activity>
+
+        <activity
+            android:name="com.pax.pay.InitializeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.InputPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateAlwaysVisible"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.SelfTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.PaymentActivity"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.pax.edc.paymentEntry" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="com.pax.edc.payment.entry"
+                    android:scheme="pax_edc" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.pax.settings.SettingsActivity"
+            android:configChanges="orientation|mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|screenSize|smallestScreenSize|layoutDirection"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SearchCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SearchCardForPanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.AdjustTipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispTransDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SignatureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.UserAgreementActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.VerifyTransActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.PrintPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.AuthMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.ManageMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.PasswordMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispSingleLineMsgActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeMerchantPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeTerminalPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeVoidPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeRefundPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeAdjustPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeSettlePwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeTlePwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputTransDataTipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputTransData1Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.PaperlessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.record.TransQueryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SettleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterAmountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterAuthCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterPinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterPinTestActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectAcqActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectTleAcqActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <!--<activity
+            android:name="com.pax.pay.trans.action.activity.SettleSelectMerchantActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />-->
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectMerchantActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.SelectReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.WizardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name="com.pax.pay.menu.DisplayQrMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ShowQRCodeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ShowQROnlyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+		<activity
+            android:name="com.pax.pay.trans.action.activity.IccReaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.PromptPayMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.TleMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterTeIdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.WalletMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.PromptPayQRReportMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.PromtPayQRReportLastTransActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.PromptPayQRSaleMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.InputTransIDActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ShowQRRefActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.QRSaleMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+
+
+        <activity
+            android:name="com.pax.pay.trans.action.activity.CheckQRActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterAmountWithMsgActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.GetSignatureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DispParamActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.KplusMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.AlipayMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.WechatMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.QRCreditMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.CheckQRKplusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.CheckQRAlipayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.CheckQRWechatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ShowQRCodeWalletActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.RedeemedMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterRedeemKbankActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.InstalmentMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterInstalmentKbankActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.DolfinInstalmentMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.password.ChangeCancelPwdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.eReceiptManagementActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EReceiptOtherSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DynamicOfflineActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DynamicOfflineSettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+                android:name="th.co.bkkps.edc.SubMenuActivityBay"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name="th.co.bkkps.edc.trans.action.activity.EnterInstalmentBayActivity"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name="th.co.bkkps.edc.SubMenuActivityInstalmentBay"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name="th.co.bkkps.edc.trans.action.activity.EnterInstalmentBaySpMscActivity"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name="th.co.bkkps.edc.SubMenuActivityRedeemBay"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name="th.co.bkkps.edc.trans.action.activity.EnterRedeemBayActivity"
+                android:screenOrientation="portrait"
+                android:excludeFromRecents="true"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="th.co.bkkps.edc.trans.action.activity.EnterInstalmentAmexActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="th.co.bkkps.dofinAPI.menu.DolfinMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.menu.ScbMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.menu.ScbIppMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.menu.ScbRedeemMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppSaleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppVoidActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppNoDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppLinkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppLoadTle"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbIppSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbVoidActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbRedeemSaleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="th.co.bkkps.scbapi.trans.action.activity.ScbRedeemInqActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.Sp200UpdateActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ReInitialEReceiptActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.AutoInitialActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexParamsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexSaleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexSettleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexVoidActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexReprintActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexLoadLogOnTleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexLoadLogOnTpkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.HistoryMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.amexapi.action.activity.AmexHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EcrPaymentSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.splash.DownloadParameterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.TleBankHostActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.TleDownloadTmkTwkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ScbLoadTleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.linkposapi.action.activity.ReportActivity"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="th.co.bkkps.linkposapi.action.activity.LinkPosAppInitialActivity"
+            android:theme="@style/AnimFade"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="nosensor">
+        </activity>
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.menu.KCheckIDMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDVerifyIdCardActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDPrintingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDUploadEReceiptActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDInquiryStatusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.bpsKCheckIDActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDPresettleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDSettleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDPrintReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDConfigurationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDDisplayDetailReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.kcheckidAPI.trans.action.activity.KCheckIDDisplaySummaryReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.activity.LanSettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.InstalmentRootMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.menu.RedemptionRootMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.SettlementRegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterPhoneNumberActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ThaiQrVerifyPaySlipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="th.co.bkkps.edc.receiver.activity.ForceSettleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DisplayEDCParamActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.AutoSettlementActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.ESettleReportUploadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.record.TransPreAuthQueryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.EnterRef1Ref2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.CheckQRDolfinIPPActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/AnimFade"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.PrintReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.pax.pay.trans.action.activity.DoSettlementActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name="com.pax.pay.ScanKitActivity" />
+
+        <receiver
+            android:name="com.pax.view.widget.AmountWidget"
+            android:label="@string/amount_widget_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_amount_info" />
+        </receiver>
+
+        <receiver
+            android:name="com.pax.view.widget.AdWidget"
+            android:label="@string/ad_widget_label">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.pax.pay.AdWidget.UPDATE_ALL" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_ad_info" />
+        </receiver>
+
+        <receiver android:name="com.pax.appstore.DownloadParamReceiver"
+            android:enabled="false" >
+            <intent-filter>
+                <action android:name="com.paxmarket.ACTION_TO_DOWNLOAD_PARAMS" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="th.co.bkkps.edc.receiver.AutoSettleAlarmReceiver"
+            android:enabled="false"
+            tools:ignore="Instantiatable"
+            android:exported="true">
+        </receiver>
+
+        <receiver android:name="th.co.bkkps.edc.receiver.ForceSettleAlarmReceiver"
+            android:enabled="false"
+            tools:ignore="Instantiatable"
+            android:exported="true">
+        </receiver>
+
+        <service android:name="com.pax.appstore.DownloadParamService"
+            android:enabled="false"/>
+
+        <service android:name="th.co.bkkps.linkposapi.service.LinkPOSService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="th.co.bkkps.linkposapi.service.LinkPOSService.SERVICE_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+
+            android:resource="@drawable/ic_bps_gray" />
+    </application>
+
+</manifest>

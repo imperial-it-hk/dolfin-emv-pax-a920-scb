@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txv_header_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/DOF_UI_HEADER"
+        android:textColor="#009688"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/gl_top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <TextView
+        android:id="@+id/txv_label_session_timeout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/DOF_UI_Text1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right_65pcnt"
+        app:layout_constraintStart_toEndOf="@id/gl_left_08_pcnt"
+        app:layout_constraintTop_toTopOf="@id/edtx_session_timeout" />
+
+    <TextView
+        android:id="@+id/txv_label_floor_limit_card_brand_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/DOF_UI_Text2"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_left_08_pcnt"
+        app:layout_constraintTop_toBottomOf="@id/edtx_session_timeout" />
+
+    <TextView
+        android:id="@+id/txv_label_card_brand_floor_limit_visacard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="2.1 VISA-CARD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_mid"
+        app:layout_constraintStart_toEndOf="@id/gl_left_20pcnt"
+        app:layout_constraintTop_toBottomOf="@id/txv_label_floor_limit_card_brand_main" />
+
+    <EditText
+        android:id="@+id/edtx_floor_limit_visacard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1500.00"
+        android:textAlignment="viewEnd"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right_85pcnt"
+        app:layout_constraintStart_toEndOf="@id/gl_mid"
+        app:layout_constraintTop_toBottomOf="@id/txv_label_floor_limit_card_brand_main" />
+
+    <TextView
+        android:id="@+id/txv_label_card_brand_floor_limit_mastercard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2.2 MASTERCARD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_mid"
+        app:layout_constraintStart_toEndOf="@id/gl_left_20pcnt"
+        app:layout_constraintTop_toBottomOf="@id/txv_label_card_brand_floor_limit_visacard" />
+
+    <EditText
+        android:id="@+id/edtx_floor_limit_mastercard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1500.00"
+        android:textAlignment="viewEnd"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right_85pcnt"
+        app:layout_constraintStart_toEndOf="@id/gl_mid"
+        app:layout_constraintTop_toBottomOf="@id/edtx_floor_limit_visacard" />
+
+    <TextView
+        android:id="@+id/txv_label_card_brand_floor_limit_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2.3 JCB-CARD"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_mid"
+        app:layout_constraintStart_toEndOf="@id/gl_left_20pcnt"
+        app:layout_constraintTop_toBottomOf="@id/txv_label_card_brand_floor_limit_mastercard" />
+
+    <EditText
+        android:id="@+id/edtx_floor_limit_jcbcard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="1500.00"
+        android:textAlignment="viewEnd"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right_85pcnt"
+        app:layout_constraintStart_toEndOf="@id/gl_mid"
+        app:layout_constraintTop_toBottomOf="@id/edtx_floor_limit_mastercard" />
+
+    <TextView
+        android:id="@+id/txv_label_session_time_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5sp"
+        android:text="@string/DOF_UI_MIN"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_right_85pcnt"
+        app:layout_constraintTop_toTopOf="@id/txv_label_session_timeout" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_08_pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right_85pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <EditText
+        android:id="@+id/edtx_session_timeout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:numeric="integer"
+        android:text="30"
+        android:textAlignment="viewEnd"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/gl_right_85pcnt"
+        app:layout_constraintStart_toEndOf="@id/gl_right_65pcnt"
+        app:layout_constraintTop_toBottomOf="@id/txv_header_main" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right_65pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_20pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F44336"
+        android:text="Cancel"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_mid"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="SAVE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/gl_mid"
+        app:layout_constraintTop_toTopOf="@id/btn_cancel"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

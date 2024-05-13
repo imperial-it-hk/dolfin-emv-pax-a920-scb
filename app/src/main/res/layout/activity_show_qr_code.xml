@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:background="@drawable/edit_frame"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <!--android:layout_height="75dp"-->
+
+        <TextView
+            android:id="@+id/please_scan_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:gravity="center_vertical"
+            android:text="@string/pls_scan_qr"
+            android:textColor="@color/secondary_text_light"
+            android:textSize="@dimen/font_size_value" />
+
+        <TextView
+            android:id="@+id/prompt_after_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:drawableStart="@drawable/tip"
+            android:gravity="center_vertical"
+            android:text="@string/pls_press_ok"
+            android:textColor="@color/secondary_text_light"
+            android:textSize="@dimen/font_size_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:background="@drawable/edit_frame"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/space_horizontal"
+        android:paddingStart="@dimen/space_horizontal">
+
+        <ImageView
+            android:id="@+id/payment_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/space_horizontal"
+        android:paddingStart="@dimen/space_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_vertical_small"
+            android:layout_marginTop="@dimen/space_vertical_small"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/standby_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_widget_label"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_size_key" />
+
+            <TextView
+                android:id="@+id/amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":)"
+                android:textAlignment="textEnd"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_size_key" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qr_sale_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_qr_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/btn_bg_dark"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_button"  />
+
+        <Button
+            android:id="@+id/ok_qr_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/btn_bg_light"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/qr_verify_pay_slip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/verify_pay_slip_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_bg_yellow"
+            android:text="Verify QR"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

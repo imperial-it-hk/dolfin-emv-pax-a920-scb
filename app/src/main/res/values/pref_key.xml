@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?><!-- DO NOT TRANSLATE THIS FILE --><!-- DO NOT TRANSLATE THIS FILE --><!-- DO NOT TRANSLATE THIS FILE -->
+<resources>
+
+    <string name="COMM_TYPE">COMM_TYPE</string>
+    <string name="COMM_MERC_NAME">COMM_MERC_NAME</string>
+    <string name="COMM_TIMEOUT">COMM_TIMEOUT</string>
+
+    <string name="MOBILE_KEEP_ALIVE">MOBILE_KEEP_ALIVE</string>
+    <string name="MOBILE_TEL_NO">MOBILE_TEL_NO</string>
+    <string name="MOBILE_APN">MOBILE_APN</string>
+    <string name="MOBILE_APN_SYSTEM">MOBILE_APN_SYSTEM</string>
+    <string name="MOBILE_NEED_USER">MOBILE_NEED_USER</string>
+    <string name="MOBILE_USER">MOBILE_USER</string>
+    <string name="MOBILE_PWD">MOBILE_PWD</string>
+    <string name="MOBILE_LOGIN_WAIT_TIME">MOBILE_LOGIN_WAIT_TIME</string>
+    <string name="MOBILE_HOST_PORT">MOBILE_HOST_PORT</string>
+    <string name="MOBILE_HOST_PORT_BAK">MOBILE_HOST_PORT_BAK</string>
+    <string name="MOBILE_SIM_PIN">MOBILE_SIM_PIN</string>
+    <string name="MOBILE_AUTH">MOBILE_AUTH</string>
+    <string name="MOBILE_HOST_IP">MOBILE_HOST_IP</string>
+    <string name="MOBILE_HOST_IP_BAK">MOBILE_HOST_IP_BAK</string>
+    <string name="MOBILE_DOMAIN_NAME">MOBILE_DOMAIN_NAME</string>
+
+    <string name="LAN_LOCAL_IP">LAN_LOCAL_IP</string>
+    <string name="LAN_NETMASK">LAN_NETMASK</string>
+    <string name="LAN_GATEWAY">LAN_GATEWAY</string>
+    <string name="LAN_DNS1">LAN_DNS1</string>
+    <string name="LAN_DNS2">LAN_DNS2</string>
+    <string name="LAN_HOST_IP">LAN_HOST_IP</string>
+    <string name="LAN_HOST_IP_BAK">LAN_HOST_IP_BAK</string>
+    <string name="LAN_HOST_PORT">LAN_HOST_PORT</string>
+    <string name="LAN_HOST_PORT_BAK">LAN_HOST_PORT_BAK</string>
+
+    <string name="COMM_REDIAL_TIMES">COMM_REDIAL_TIMES</string>
+    <string name="EDC_REVERSAL_RETRY">EDC_REVERSAL_RETRY</string>
+    <string name="MAX_TRANS_COUNT">MAX_TRANS_COUNT</string>
+
+    <string name="OFFLINE_TC_UPLOAD_TIMES">OFFLINE_TC_UPLOAD_TIMES</string>
+    <string name="OFFLINE_TC_UPLOAD_NUM">OFFLINE_TC_UPLOAD_NUM</string>
+
+    <string name="QUICK_PASS_TRANS_PIN_FREE_AMOUNT">QUICK_PASS_TRANS_PIN_FREE_AMOUNT</string>
+    <string name="QUICK_PASS_TRANS_SIGN_FREE_AMOUNT">QUICK_PASS_TRANS_SIGN_FREE_AMOUNT</string>
+
+    <string name="EDC_MERCHANT_NAME_EN">EDC_MERCHANT_NAME_EN</string>
+    <string name="EDC_MERCHANT_ADDRESS">EDC_MERCHANT_ADDRESS</string>
+    <string name="EDC_MERCHANT_ADDRESS1">EDC_MERCHANT_ADDRESS1</string>
+    <string name="EDC_CURRENCY_LIST">EDC_CURRENCY_LIST</string>
+    <string name="EDC_LANGUAGE">ENGLISH</string>
+    <string name="EDC_PED_MODE">EDC_PED_MODE</string>
+    <string name="EDC_RECEIPT_NUM">EDC_RECEIPT_NUM</string>
+    <string name="EDC_SETTLEMENT_RECEIPT_ENABLE">EDC_SETTLEMENT_RECEIPT_ENABLE</string>
+    <string name="EDC_AUDITREPORT_RECEIPT_ENABLE">EDC_AUDITREPORT_RECEIPT_ENABLE</string>
+    <string name="EDC_LINKPOS_BYPASS_CONFIRM_VOID">EDC_LINKPOS_BYPASS_CONFIRM_VOID</string>
+    <string name="EDC_LINKPOS_BYPASS_CONFIRM_SETTLE">EDC_LINKPOS_BYPASS_CONFIRM_SETTLE</string>
+    <string name="EDC_STAN_NO">EDC_STAN_NO</string>
+    <string name="EDC_SUPPORT_TIP">EDC_SUPPORT_TIP</string>
+    <string name="EDC_SUPPORT_KEYIN">EDC_SUPPORT_KEYIN</string>
+    <string name="SUPPORT_USER_AGREEMENT">SUPPORT_USER_AGREEMENT</string>
+    <string name="EDC_ENABLE_PAPERLESS">EDC_ENABLE_PAPERLESS</string>
+    <string name="EDC_SMTP_HOST">EDC_SMTP_HOST</string>
+    <string name="EDC_SMTP_PORT">EDC_SMTP_PORT</string>
+    <string name="EDC_SMTP_USERNAME">EDC_SMTP_USERNAME</string>
+    <string name="EDC_SMTP_PASSWORD">EDC_SMTP_PASSWORD</string>
+    <string name="EDC_SMTP_ENABLE_SSL">EDC_SMTP_ENABLE_SSL</string>
+    <string name="EDC_SMTP_SSL_PORT">EDC_SMTP_SSL_PORT</string>
+    <string name="EDC_SMTP_FROM">EDC_SMTP_FROM</string>
+    <string name="EDC_CONFIRM_PROCESS">EDC_CONFIRM_PROCESS</string>
+    <string name="EDC_SUPPORT_REFUND">EDC_SUPPORT_REFUND</string>
+    <string name="EDC_DOUBLE_BLOCKED_TRANS_ENABLE">EDC_DOUBLE_BLOCKED_TRANS_ENABLE</string>
+    <string name="EDC_QR_TAG_31_ENABLE">EDC_QR_TAG_31_ENABLE</string>
+    <string name="EDC_QR_TAG_31_REPORT_GROUPING_OLD_STYLE">EDC_QR_TAG_31_REPORT_GROUPING_OLD_STYLE</string>
+    <string name="EDC_ENABLE_SETTLE_MODE_TESTING">EDC_ENABLE_SETTLE_MODE_TESTING</string>
+    <string name="EDC_ENABLE_PRINT_ON_EXECUTE_SETTLE">EDC_ENABLE_PRINT_ON_EXECUTE_SETTLE</string>
+    <string name="EDC_ENABLE_PREAUTH">EDC_ENABLE_PREAUTH</string>
+    <string name="EDC_ENABLE_OFFLINE">EDC_ENABLE_OFFLINE</string>
+    <string name="EDC_ENABLE_TIP_ADJUST">EDC_ENABLE_TIP_ADJUST</string>
+    <string name="EDC_ENABLE_WECHAT_B_SCAN_C">EDC_ENABLE_WECHAT_B_SCAN_C</string>
+    <string name="EDC_ENABLE_ALIPAY_B_SCAN_C">EDC_ENABLE_ALIPAY_B_SCAN_C</string>
+
+    <string name="MK_INDEX">MK_INDEX</string>
+    <string name="KEY_ALGORITHM">KEY_ALGORITHM</string>
+    <string name="MK_INDEX_MANUAL">MK_INDEX_MANUAL</string>
+    <string name="MK_VALUE">MK_VALUE</string>
+    <string name="PK_VALUE">PK_VALUE</string>
+    <string name="AK_VALUE">AK_VALUE</string>
+
+    <string name="ACQ_NAME">ACQ_NAME</string>
+
+    <string name="SEC_SYS_PWD">SEC_SYS_PWD</string>
+    <string name="SEC_MERCHANT_PWD">SEC_MERCHANT_PWD</string>
+    <string name="SEC_CONFIG_PWD">SEC_CONFIG_PWD</string>
+    <string name="SEC_TERMINAL_PWD">SEC_TERMINAL_PWD</string>
+    <string name="SEC_VOID_PWD">SEC_VOID_PWD</string>
+    <string name="SEC_REFUND_PWD">SEC_REFUND_PWD</string>
+    <string name="SEC_ADJUST_PWD">SEC_ADJUST_PWD</string>
+    <string name="SEC_SETTLE_PWD">SEC_SETTLE_PWD</string>
+    <string name="SEC_TLE_PWD">SEC_TLE_PWD</string>
+    <string name="SEC_CANCEL_PWD">SEC_CANCEL_PWD</string>
+    <string name="SEC_DYNAMIC_OFFLINE_PWD">SEC_DYNAMIC_OFFLINE_PWD</string>
+    <string name="SEC_OFFLINE_PWD">SEC_OFFLINE_PWD</string>
+    <string name="SEC_PREAUTH_PWD">SEC_PREAUTH_PWD</string>
+    <string name="SEC_TIP_ADJUSTMENT_PWD">SEC_TIP_ADJUSTMENT_PWD</string>
+
+    <string name="LAN_DHCP">LAN_DHCP</string>
+
+    <string name="OTHTC_VERIFY">OTHTC_VERIFY</string>
+    <string name="QUICK_PASS_TRANS_PIN_FREE_SWITCH">QUICK_PASS_TRANS_PIN_FREE_SWITCH</string>
+    <string name="QUICK_PASS_TRANS_FLAG">QUICK_PASS_TRANS_FLAG</string>
+    <string name="QUICK_PASS_TRANS_SWITCH">QUICK_PASS_TRANS_SWITCH</string>
+    <string name="QUICK_PASS_TRANS_CDCVM_FLAG">QUICK_PASS_TRANS_CDCVM_FLAG</string>
+    <string name="QUICK_PASS_TRANS_SIGN_FREE_FLAG">QUICK_PASS_TRANS_SIGN_FREE_FLAG</string>
+
+    <string name="TTS_SALE">TTS_SALE</string>
+    <string name="TTS_VOID">TTS_VOID</string>
+    <string name="TTS_REFUND">TTS_REFUND</string>
+    <string name="TTS_PREAUTH">TTS_PREAUTH</string>
+    <string name="TTS_ADJUST">TTS_ADJUST</string>
+
+    <string name="IS_SETTLED_RABBIT">IS_SETTLED_RABBIT</string>
+    <string name="IS_DOWNLOADED_CD">IS_DOWNLOADED_CD</string>
+    <string name="IS_TLE_AUTO_INIT_REQUIRED">IS_TLE_AUTO_INIT_REQUIRED</string>
+
+    <string name="EDC_TRACE_NO">EDC_TRACE_NO</string>
+    <string name="EDC_NUM_OF_SLIP_LINEPAY">EDC_NUM_OF_SLIP_LINEPAY</string>
+    <string name="RABBIT_KEY">RABBIT_KEY</string>
+    <string name="EDC_ENABLE_E_SIGNATURE">EDC_ENABLE_E_SIGNATURE</string>
+    <string name="EDC_ENABLE_KERRY_API">EDC_ENABLE_KERRY_API</string>
+    <string name="EDC_KERRY_API_URL">EDC_KERRY_API_URL</string>
+    <string name="EDC_ENABLE_GRAND_TOTAL">EDC_ENABLE_GRAND_TOTAL</string>
+    <string name="EDC_DEFAULT_CAMERA">EDC_DEFAULT_CAMERA</string>
+    <string name="EDC_ENABLE_QR_BARCODE">EDC_ENABLE_QR_BARCODE</string>
+    <string name="MAX_LIMIT_ERM_ERECEPT_PENDING_UPLOAD">MAX_LIMIT_ERM_ERECEPT_PENDING_UPLOAD</string>
+
+    <string name="LINKPOS_PROTOCOL">LINKPOS_PROTOCOL</string>
+    <string name="LINKPOS_COMM_TYPE">LINKPOS_COMM_TYPE</string>
+    <string name="NEED_UPDATE_PARAM">NEED_UPDATE_PARAM</string>
+    <string name="FLAG_UPDATE_PARAM">FLAG_UPDATE_PARAM</string>
+    <string name="NEED_CONSEQUENT_PARAM_INITIAL">NEED_CONSEQUENT_PARAM_INITIAL</string>
+    <string name="SAVE_FILE_PATH_PARAM">SAVE_FILE_PATH_PARAM</string>
+
+    <string name="SCREEN_TIMEOUT">SCREEN_TIMEOUT</string>
+    <string name="PASSWORD_FAILED_COUNT">PASSWORD_FAILED_COUNT</string>
+    <string name="NEED_UPDATE_SCREEN_TIMEOUT">NEED_UPDATE_SCREEN_TIMEOUT</string>
+    <string name="NEED_SWITCH_APN">NEED_SWITCH_APN</string>
+    <string name="EDC_ENABLE_WALLET_C_SCAN_B">EDC_ENABLE_WALLET_C_SCAN_B</string>
+    <string name="EDC_AID_FILE_UPLOAD_STATUS">EDC_AID_FILE_UPLOAD_STATUS</string>
+    <string name="EDC_CARD_RANGE_FILE_UPLOAD_STATUS">EDC_CARD_RANGE_FILE_UPLOAD_STATUS</string>
+    <string name="EDC_ISSUER_FILE_UPLOAD_STATUS">EDC_ISSUER_FILE_UPLOAD_STATUS</string>
+    <string name="EDC_ENABLE_IMG_ON_END_RECEIPT">EDC_ENABLE_IMG_ON_END_RECEIPT</string>
+
+    <string name="EDC_KIOSK_MODE">EDC_KIOSK_MODE</string>
+    <string name="EDC_KIOSK_TIMEOUT">EDC_KIOSK_TIMEOUT</string>
+
+
+    <string name="EDC_ENABLE_CONTACTLESS">EDC_ENABLE_CONTACTLESS</string>
+    <string name="EDC_ENABLE_CONTACTLESS_VISA">EDC_ENABLE_CONTACTLESS_VISA</string>
+    <string name="EDC_ENABLE_CONTACTLESS_MASTER">EDC_ENABLE_CONTACTLESS_MASTER</string>
+    <string name="EDC_ENABLE_CONTACTLESS_JCB">EDC_ENABLE_CONTACTLESS_JCB</string>
+    <string name="EDC_ENABLE_CONTACTLESS_UP">EDC_ENABLE_CONTACTLESS_UP</string>
+    <string name="EDC_ENABLE_CONTACTLESS_TPN">EDC_ENABLE_CONTACTLESS_TPN</string>
+    <string name="EDC_ENABLE_CONTACTLESS_AMEX">EDC_ENABLE_CONTACTLESS_AMEX</string>
+
+    <string name="EDC_ENABLE_KEYIN">EDC_ENABLE_KEYIN</string>
+    <string name="EDC_ENABLE_LOGGLY">EDC_ENABLE_LOGGLY</string>
+    <string name="EDC_ENABLE_VOID_WITH_STAND">EDC_ENABLE_VOID_WITH_STAND</string>
+    <string name="EDC_ENABLE_QR_BARCODE_ALIPAY_WECHAT">EDC_ENABLE_QR_BARCODE_ALIPAY_WECHAT</string>
+    <string name="EDC_SUPPORT_SP200">EDC_SUPPORT_SP200</string>
+    <string name="EDC_LINKPOS_PRINT_FOOTER_RECEIPT_ENABLE">EDC_LINKPOS_PRINT_FOOTER_RECEIPT_ENABLE</string>
+    <string name="EDC_ENABLE_QR_BARCODE_COD">EDC_ENABLE_QR_BARCODE_COD</string>
+
+    <string name="EDC_CURRENT_MERCHANT">EDC_CURRENT_MERCHANT</string>
+
+
+    <!-- VERIFONE-ERM -->
+    <string name="VF_ERCM_TERMINAL_SERIALNUMBER">TERMINAL SERIAL NUMBER</string>
+    <string name="VF_ERCM_BANK_CODE">BANK CODE</string>
+    <string name="VF_ERCM_STORE_CODE">STORE CODE</string>
+    <string name="VF_ERCM_MERCHANT_CODE">MERCHANT CODE</string>
+    <string name="VF_ERCM_TERMINAL_INITIATED">TERMINAL REGISTERED</string>
+    <string name="VF_ERCM_EXTERNAL_PUBLICKEY_FILE">EXTERNAL_PUBLICKEY_FILE</string>
+    <string name="VF_ERCM_ENABLE">VF_ERCM_ENABLE</string>
+
+    <string name="VF_ERCM_KEK_VERSION">KEK VERSION</string>
+    <string name="VF_ERCM_KEK_TYPE">KEK TYPE</string>
+    <string name="VF_ERCM_SESSION_KEY_KCV">SESSION KEY KCV</string>
+    <string name="VF_ERCM_SESSION_KEY_ORI_DATA">SESSION KEY ORIGINAL DATA</string>
+    <string name="VF_ERCM_SESSION_KEY_ENC_DATA">SESSION KEY ENCRYPTED DATA</string>
+
+    <string name="VF_ERCM_ENABLE_PRINT_AFTER_TXN">VF_ERCM_ENABLE_PRINT_AFTER_TXN</string>
+    <string name="VF_ERCM_ENABLE_NEXT_TRANS_UPLOAD">VF_ERCM_ENABLE_NEXT_TRANS_UPLOAD</string>
+    <string name="VF_ERCM_ENABLE_PRINT_PRE_SETTLE">VF_ERCM_ENABLE_PRINT_PRE_SETTLE</string>
+    <string name="VF_ERCM_ENABLE_FORCE_SETTLE_PRINT_ALL_TRANS">VF_ERCM_ENABLE_FORCE_SETTLE_PRINT_ALL_TRANS</string>
+    <string name="VF_ERCM_NO_OF_SLIP">VF_ERCM_NO_OF_SLIP</string>
+    <string name="VF_ERCM_NO_OF_SLIP_UNABLE_UPLOAD">VF_ERCM_NO_OF_SLIP_UNABLE_UPLOAD</string>
+
+
+    <string name="KBANK_DYNAMIC_OFFLINE_ENABLED">KBANK_DYNAMIC_OFFLINE_ENABLED</string>
+    <string name="KBANK_DYNAMIC_OFFLINE_DATETIME">KBANK_DYNAMIC_OFFLINE_DATETIME</string>
+    <string name="KBANK_DYNAMIC_OFFLINE_SESSION_MINUTE">DYNAMIC_OFFLINE_SESSION_MINUTE</string>
+    <string name="KBANK_DYNAMIC_OFFLINE_SHOW_MENU">KBANK_DYNAMIC_OFFLINE_SHOW_MENU</string>
+
+
+    <string name="KBANK_DYNAMIC_OFFLINE_HEADING_ERROR">Dynamic Offline Mode</string>
+    <string name="KBANK_DYNAMIC_OFFLINE_DISABLE_ERROR">Unable to Turn-Off</string>
+
+    <string name="TLE_PARAMETER_FILE_PATH">TLE_PARAMETER_FILE_PATH</string>
+
+    <string name="EDC_MAXIMUM_AMOUNT">EDC_MAXIMUM_AMOUNT</string>
+    <string name="EDC_MINIMUM_AMOUNT">EDC_MINIMUM_AMOUNT</string>
+    <string name="EDC_CTLS_TRANS_LIMIT">EDC_CTLS_TRANS_LIMIT</string>
+
+    <string name="EDC_ENABLE_FORCE_SEL_APP_FOR_DUO_BRAND_CARD">EDC_ENABLE_FORCE_SEL_APP_FOR_DUO_BRAND_CARD</string>
+
+    <string name="EDC_ENABLE_SALE_CREDIT_MENU">EDC_ENABLE_SALE_CREDIT_MENU</string>
+    <string name="EDC_ENABLE_VOID_MENU">EDC_ENABLE_VOID_MENU</string>
+    <string name="EDC_ENABLE_KPLUS_MENU">EDC_ENABLE_KPLUS_MENU</string>
+    <string name="EDC_ENABLE_ALIPAY_MENU">EDC_ENABLE_ALIPAY_MENU</string>
+    <string name="EDC_ENABLE_WECHAT_MENU">EDC_ENABLE_WECHAT_MENU</string>
+    <string name="EDC_ENABLE_QR_CREDIT_MENU">EDC_ENABLE_QR_CREDIT_MENU</string>
+    <string name="EDC_ENABLE_SMART_PAY_MENU">EDC_ENABLE_SMART_PAY_MENU</string>
+    <string name="EDC_ENABLE_REDEEM_MENU">EDC_ENABLE_REDEEM_MENU</string>
+    <string name="EDC_ENABLE_CT1_EPP_MENU">EDC_ENABLE_CT1_EPP_MENU</string>
+    <string name="EDC_ENABLE_AMEX_EPP_MENU">EDC_ENABLE_AMEX_EPP_MENU</string>
+    <string name="EDC_ENABLE_SCB_IPP_MENU">EDC_ENABLE_SCB_IPP_MENU</string>
+    <string name="EDC_ENABLE_SCB_REDEEM_MENU">EDC_ENABLE_SCB_REDEEM_MENU</string>
+    <string name="EDC_ENABLE_DOLFIN_MENU">EDC_ENABLE_DOLFIN_MENU</string>
+    <string name="EDC_ENABLE_KCHECKID_MAIN_MENU">EDC_ENABLE_KCHECKID_MAIN_MENU</string>
+    <string name="EDC_ENABLE_KCHECKID_SUB_INQUIRY_MENU">EDC_ENABLE_KCHECKID_SUB_INQUIRY_MENU</string>
+    <string name="EDC_ENABLE_MYPROMPT_MENU">EDC_ENABLE_MYPROMPT_MENU</string>
+    <string name="EDC_ENABLE_DOLFIN_IPP_MENU">EDC_ENABLE_DOLFIN_IPP_MENU</string>
+    <string name="EDC_ENABLE_ALIPAY_BSCANC_MENU">EDC_ENABLE_ALIPAY_BSCANC_MENU</string>
+    <string name="EDC_ENABLE_WECHAT_BSCANC_MENU">EDC_ENABLE_WECHAT_BSCANC_MENU</string>
+
+    <string name="EDC_RECV_LINKPOS_CMD_SALE_CREDIT">EDC_RECV_LINKPOS_CMD_SALE_CREDIT</string>
+    <string name="EDC_RECV_LINKPOS_CMD_VOID">EDC_RECV_LINKPOS_CMD_VOID</string>
+    <string name="EDC_RECV_LINKPOS_CMD_KPLUS">EDC_RECV_LINKPOS_CMD_KPLUS</string>
+    <string name="EDC_RECV_LINKPOS_CMD_ALIPAY">EDC_RECV_LINKPOS_CMD_ALIPAY</string>
+    <string name="EDC_RECV_LINKPOS_CMD_WECHAT">EDC_RECV_LINKPOS_CMD_WECHAT</string>
+    <string name="EDC_RECV_LINKPOS_CMD_QR_CREDIT">EDC_RECV_LINKPOS_CMD_QR_CREDIT</string>
+<!--    <string name="EDC_RECV_LINKPOS_CMD_SMART_PAY">EDC_RECV_LINKPOS_CMD_SMART_PAY</string>-->
+<!--    <string name="EDC_RECV_LINKPOS_CMD_REDEEM">EDC_RECV_LINKPOS_CMD_REDEEM</string>-->
+<!--    <string name="EDC_RECV_LINKPOS_CMD_CT1_EPP">EDC_RECV_LINKPOS_CMD_CT1_EPP</string>-->
+<!--    <string name="EDC_RECV_LINKPOS_CMD_AMEX_EPP">EDC_RECV_LINKPOS_CMD_AMEX_EPP</string>-->
+<!--    <string name="EDC_RECV_LINKPOS_CMD_SCB_IPP">EDC_RECV_LINKPOS_CMD_SCB_IPP</string>-->
+    <string name="EDC_RECV_LINKPOS_CMD_DOLFIN">EDC_RECV_LINKPOS_CMD_DOLFIN</string>
+    <string name="EDC_RECV_LINKPOS_CMD_SALE_ALL_QR">EDC_RECV_LINKPOS_CMD_SALE_ALL_QR</string>
+    <string name="EDC_RECV_LINKPOS_CMD_REQ_AUDIT_REPORT">EDC_RECV_LINKPOS_CMD_REQ_AUDIT_REPORT</string>
+    <string name="EDC_RECV_LINKPOS_CMD_REQ_SETTLEMENT">EDC_RECV_LINKPOS_CMD_REQ_SETTLEMENT</string>
+
+    <string name="SCREEN_TIME_OUT_SEARCH_CARD">SCREEN_TIME_OUT_SEARCH_CARD</string>
+    <string name="EDC_QR_TAG_31_ECR_RETURN_MODE">EDC_QR_TAG_31_ECR_RETURN_MODE</string>
+    <string name="THAI_QR_INQUIRY_MAX_COUNT_FOR_SHOW_VERIFY_QR_BUTTON">THAI_QR_INQUIRY_MAX_COUNT_FOR_SHOW_VERIFY_QR_BUTTON</string>
+    <string name="EDC_SETTLE_MODE_TESTING_TIME_INTERVAL">EDC_SETTLE_MODE_TESTING_TIME_INTERVAL</string>
+
+    <string name="EDC_SETTLEMENT_MODE">EDC_SETTLEMENT_MODE</string>
+    <string name="EDC_SUPPORT_REF1_2_MODE">EDC_SUPPORT_REF1_2_MODE</string>
+    <string name="EDC_DISP_TEXT_REF1">EDC_DISP_TEXT_REF1</string>
+    <string name="EDC_DISP_TEXT_REF2">EDC_DISP_TEXT_REF2</string>
+    <string name="EDC_MAX_PERCENTAGE_TIP_ADJUST">EDC_MAX_PERCENTAGE_TIP_ADJUST</string>
+    <string name="EDC_MAX_PERCENTAGE_SALE_COMPLETION">EDC_MAX_PERCENTAGE_SALE_COMPLETION</string>
+    <string name="EDC_NUMBER_OF_DAY_KEEP_PREAUTH_TRANS">EDC_NUMBER_OF_DAY_KEEP_PREAUTH_TRANS</string>
+    <string name="DOLFIN_QR_ON_SCREEN_TIMEOUT">DOLFIN_QR_ON_SCREEN_TIMEOUT</string>
+    <string name="ACQ_ALIWECHAT_B_SCAN_C_NII">ACQ_ALIWECHAT_B_SCAN_C_NII</string>
+</resources>

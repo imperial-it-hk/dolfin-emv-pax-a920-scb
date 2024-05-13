@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/prompt_tran_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_vertical"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:text="@string/prompt_input_trans_id"
+        android:textSize="@dimen/font_size_prompt"
+        android:textColor="@color/primary_text_light" />
+
+    <com.pax.view.keyboard.CustomKeyboardEditText
+        android:id="@+id/input_trans_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:background="@drawable/edit_frame"
+        android:gravity="end|center_vertical"
+        android:inputType="text"
+        android:textSize="@dimen/font_edit_text"
+        app:keepKeyboardOn="true"
+        app:xml="@xml/numeric_keyboard_confirm" />
+
+</LinearLayout>

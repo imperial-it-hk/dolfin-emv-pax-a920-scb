@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginBottom="3dp"
+    >
+    <!-- ======================================================默认读卡界面==================================================== -->
+
+    <LinearLayout
+        android:id="@+id/searchCard_default_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <com.pax.view.ClssLightsView
+            android:id="@+id/clssLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_half"
+            android:layout_marginBottom="@dimen/space_vertical_half"/>
+
+        <!-- 显示金额 -->
+        <LinearLayout
+            android:id="@+id/amount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/space_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_widget_label"
+                android:gravity="bottom"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_marginStart="@dimen/space_horizontal" />
+
+            <TextView
+                android:id="@+id/amount_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amount_default"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value"
+                android:layout_marginEnd="3dp"/>
+        </LinearLayout>
+
+        <!-- EditText 账号 -->
+        <LinearLayout
+            android:id="@+id/card_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_frame"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_prompt_readcard_th"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical_small"
+                android:text="--PROMPT TH TEXT--"
+                android:textColor="@color/secondary_text_light"
+                android:textSize="@dimen/font_size_prompt" />
+            <TextView
+                android:id="@+id/tv_prompt_readcard_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical_small"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:text="--PROMPT EN TEXT--"
+                android:textColor="@color/secondary_text_light"
+                android:textSize="@dimen/font_size_prompt" />
+
+            <View style="@style/LongLine" />
+
+            <EditText
+                android:id="@+id/bank_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/prompt_card_num"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/primary_text_light"
+                android:textColorHint="@color/secondary_text_light"
+                android:textSize="@dimen/font_edit_text" />
+
+            <EditText
+                android:id="@+id/bank_card_expdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/prompt_date_default"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/primary_text_light"
+                android:textColorHint="@color/secondary_text_light"
+                android:textSize="@dimen/font_edit_text" />
+
+            <TextView
+                android:id="@+id/card_issuer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:gravity="center"
+                android:text="@string/placeholder"
+                android:textSize="@dimen/font_size_value" />
+
+            <TextView
+                android:id="@+id/bank_card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:gravity="center"
+                android:text="@string/placeholder"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/qr_scanner"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/card_icon"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:src="@drawable/scanner"
+        android:contentDescription="@string/image_desc"/>
+
+    <!-- 刷卡、插卡、挥卡 -->
+    <RelativeLayout
+        android:id="@+id/card_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:layout_marginBottom="78dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignBottom="@+id/linearlayout_bot">
+
+        <!-- 确定按键 -->
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/supported_card_prompt"
+            android:layout_marginBottom="@dimen/space_vertical_large"
+            android:background="@drawable/btn_bg_light"
+            android:text="@string/dialog_ok"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/supported_card_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_swipe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/no_swipe_card"
+                android:contentDescription="@string/image_desc" />
+
+            <ImageView
+                android:id="@+id/iv_insert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/no_insert_card"
+                android:contentDescription="@string/image_desc" />
+
+            <ImageView
+                android:id="@+id/iv_tap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitEnd"
+                android:src="@drawable/no_tap_card"
+                android:contentDescription="@string/image_desc" />
+
+            <SurfaceView
+                android:id="@+id/camera_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/image_desc"
+                android:scaleType="fitEnd"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#F44336"
+            android:text="@string/title_erc_payment_select_cancel_button_with_timer"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/font_button"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

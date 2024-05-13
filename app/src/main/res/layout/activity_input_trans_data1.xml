@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/prompt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_vertical"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:text="@string/prompt_input_transno"
+        android:textSize="@dimen/font_size_prompt"
+        android:textColor="@color/primary_text_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/instalmentSerialNum"
+            app:layout_constraintTop_toBottomOf="@+id/serialNumLabel"
+            app:srcCompat="@drawable/scanner" />
+
+        <com.pax.view.keyboard.CustomKeyboardEditText
+            android:id="@+id/input_data_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_weight="8"
+            android:background="@drawable/edit_frame"
+            android:gravity="end|center_vertical"
+            android:inputType="text"
+            android:textSize="@dimen/font_edit_text"
+            app:keepKeyboardOn="true"
+            app:xml="@xml/numeric_keyboard_confirm" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:gravity="center_vertical"
+        android:text="@string/remark"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="@dimen/font_size_hint" />
+
+    <TextView
+        android:id="@+id/prompt_do_last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/tip"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:gravity="center_vertical"
+        android:text="@string/prompt_get_last"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="@dimen/font_size_hint" />
+
+    <Button
+        android:id="@+id/info_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/space_vertical_large"
+        android:background="@drawable/btn_bg_light"
+        android:text="@string/dialog_ok"
+        android:textColor="@color/primary_text_dark"
+        android:textSize="@dimen/font_button" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/reader_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_vertical"
+        android:layout_marginTop="@dimen/space_vertical"
+        android:text="@string/rabbit_reader_key"
+        android:textSize="@dimen/font_size_prompt"
+        android:textColor="@color/primary_text_light" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_production"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radio_test"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radio_etc"
+                android:layout_width="296dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="" />
+
+        </RadioGroup>
+
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="239dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/space_horizontal"
+            android:layout_marginStart="@dimen/space_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:layout_marginTop="@dimen/space_vertical_small"
+                android:text="@string/bss_reader_key_production"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:layout_marginTop="@dimen/space_vertical_small"
+                android:text="@string/bss_reader_key_test"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt" />
+
+            <EditText
+                android:id="@+id/input_reader_key"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:hint="@string/bss_reader_key"
+                android:inputType="text"
+                android:maxLength="16"
+                android:maxLines="1"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_light"
+        android:layout_marginTop="15dp"
+        android:text="@string/dialog_ok"
+        android:textColor="@color/primary_text_dark" />
+
+
+</LinearLayout>

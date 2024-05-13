@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/protocol">
+    <ListPreference
+        android:defaultValue="@string/auto"
+        android:dialogTitle="@string/linkposManage_menu_protocol_prompt"
+        android:entries="@array/linkpos_protocols"
+        android:entryValues="@array/linkpos_protocols_value"
+        android:key="@string/LINKPOS_PROTOCOL"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/linkpos_protocol" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/linkpos_comm_type">
+        <ListPreference
+            android:defaultValue="@string/linkpos_usb_to_serial"
+            android:dialogTitle="@string/linkposManage_menu_comm_prompt"
+            android:entries="@array/linkpos_comm_types"
+            android:entryValues="@array/linkpos_comm_types_value"
+            android:key="@string/LINKPOS_COMM_TYPE"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/linkpos_comm" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="65dp"
+        android:backgroundTint="#4CAF50"
+        android:text="OK"
+        app:layout_constraintBottom_toTopOf="@id/splash_gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/splash_gl_right"
+        app:layout_constraintStart_toEndOf="@id/tx_bps_main" />
+
+    <TextView
+        android:id="@+id/tx_splash_init_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_gl_top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_bps_main"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:width="45sp"
+        android:lineSpacingExtra="-25sp"
+        android:text="WE\nL\nC\nO\nME"
+        android:textAlignment="center"
+        android:textColor="#037108"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/splash_gl_bot"
+        app:layout_constraintStart_toEndOf="@id/splash_gl_left"
+        app:layout_constraintTop_toBottomOf="@id/splash_gl_top" />
+
+    <TextView
+        android:id="@+id/tx_status_version_exists"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="30dp"
+        android:text="-"
+        android:textColor="#050505"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/splash_gl_right"
+        app:layout_constraintStart_toEndOf="@id/tx_bps_main"
+        app:layout_constraintTop_toBottomOf="@id/splash_gl_top" />
+
+    <TextView
+        android:id="@+id/tx_status_version_incoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/splash_gl_right"
+        app:layout_constraintStart_toEndOf="@id/tx_bps_main"
+        app:layout_constraintTop_toBottomOf="@id/tx_status_version_exists" />
+
+    <TextView
+        android:id="@+id/tx_status_version_diff_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/splash_gl_right"
+        app:layout_constraintStart_toEndOf="@id/tx_bps_main"
+        app:layout_constraintTop_toBottomOf="@id/tx_status_version_incoming" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.005" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.995" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.002" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/splash_gl_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.997" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_states"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_ok"
+        app:layout_constraintEnd_toStartOf="@id/splash_gl_right"
+        app:layout_constraintStart_toEndOf="@id/tx_bps_main"
+        app:layout_constraintTop_toBottomOf="@id/tx_status_version_diff_state">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_left_25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="25dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_bot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="3dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="3dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="3dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/inner_gl_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="3dp" />
+
+        <TextView
+            android:id="@+id/txv_num_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="1."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/inner_gl_top"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="2."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_01"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="3."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_02"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="4."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_03"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="5."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_04"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="6."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_05"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_07"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="7."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_06"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="8."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_07"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_09"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="9."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_08"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="10."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_09"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="11."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_10"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_num_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="12."
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_left_25dp"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left"
+            app:layout_constraintTop_toBottomOf="@id/txv_num_11"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txv_status_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_01"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_01" />
+
+        <TextView
+            android:id="@+id/txv_status_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_02"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_02" />
+
+        <TextView
+            android:id="@+id/txv_status_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_03"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_03" />
+
+        <TextView
+            android:id="@+id/txv_status_04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_04"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_04" />
+
+        <TextView
+            android:id="@+id/txv_status_05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_05"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_05" />
+
+        <TextView
+            android:id="@+id/txv_status_06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_06"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_06" />
+
+        <TextView
+            android:id="@+id/txv_status_07"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_07"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_07" />
+
+        <TextView
+            android:id="@+id/txv_status_08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_08"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_08" />
+
+        <TextView
+            android:id="@+id/txv_status_09"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_09"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_09" />
+
+        <TextView
+            android:id="@+id/txv_status_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_10"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_10" />
+
+        <TextView
+            android:id="@+id/txv_status_11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_11"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_11" />
+
+        <TextView
+            android:id="@+id/txv_status_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_12"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_right"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_mid"
+            app:layout_constraintTop_toTopOf="@id/txv_num_12" />
+
+        <TextView
+            android:id="@+id/txv_subj_01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="BASE PARAM LOAD (SELF-TEST)"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_01"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_01" />
+
+        <TextView
+            android:id="@+id/txv_subj_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="PAX STORE : PARAM"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_02"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_02" />
+
+        <TextView
+            android:id="@+id/txv_subj_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="INITIAL E-RECRIPT"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_03"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_03" />
+
+        <TextView
+            android:id="@+id/txv_subj_04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="PRINT E-RECEIPT REPORT"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_04"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_04" />
+
+        <TextView
+            android:id="@+id/txv_subj_05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="DOLFIN PERMISSION"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_05"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_05" />
+
+        <TextView
+            android:id="@+id/txv_subj_06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="LOAD TLE : SCB IPP/REDEEM"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_06"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_06" />
+
+        <TextView
+            android:id="@+id/txv_subj_07"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="LOAD TLE : AMEX"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_07"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_07" />
+
+        <TextView
+            android:id="@+id/txv_subj_08"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="LOAD TPK : AMEX"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_08"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_08" />
+
+        <TextView
+            android:id="@+id/txv_subj_09"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="LOAD TLE KBANK"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_09"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_09" />
+
+        <TextView
+            android:id="@+id/txv_subj_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="PRINT TLE REPORT"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_10"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_10" />
+
+        <TextView
+            android:id="@+id/txv_subj_11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="INIT LINKPOS APP"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_11"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_11" />
+
+        <TextView
+            android:id="@+id/txv_subj_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:text="UPGRADE SP200 FIRMWARE"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/txv_num_12"
+            app:layout_constraintEnd_toStartOf="@id/inner_gl_mid"
+            app:layout_constraintStart_toEndOf="@id/inner_gl_left_25dp"
+            app:layout_constraintTop_toTopOf="@id/txv_num_12" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

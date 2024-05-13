@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/space_horizontal"
+    android:layout_marginEnd="@dimen/space_horizontal">
+
+    <Spinner
+        android:id="@+id/acquirer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/acq_select_hint" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/acquirer_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_is_default"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acquirer_is_default" />
+
+                <CheckBox
+                    android:id="@+id/acquirer_is_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_terminal_id"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/terminal_id" />
+
+                <EditText
+                    android:id="@+id/terminal_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end|center"
+                    android:maxLines="1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_edit_text"
+                    android:maxLength="8"
+                    android:layout_gravity="center_vertical"
+                    android:inputType="text"
+                    android:hint="@string/acq_terminal_id_hint" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_merchant_id"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/merchant_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="text"
+                    android:hint="@string/acq_merchant_id_hint" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:id="@+id/store_id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:text="@string/acq_store_id"
+                    android:layout_toStartOf="@+id/store_id" />
+
+                <EditText
+                    android:id="@+id/store_id"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_edit_text"
+                    android:maxLength="5"
+                    android:inputType="number" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/store_name_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_store_name"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/store_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="20"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:text="@string/acq_nii"
+                    android:layout_toStartOf="@+id/nii_acq" />
+
+                <EditText
+                    android:id="@+id/nii_acq"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_edit_text"
+                    android:hint="@string/acq_nii_hint"
+                    android:maxLength="3"
+                    android:inputType="number" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_batch_no"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/batch_num" />
+
+                <EditText
+                    android:id="@+id/batch_num"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_edit_text"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_batch_no_hint" />
+            </RelativeLayout>
+
+            <View style="@style/LongLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_address_1st"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/space_vertical_small" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_ip"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/acq_ip"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_size_value"
+                    android:inputType="number|numberDecimal"
+                    android:digits="0123456789."
+                    android:hint="@string/acq_ip_hint"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_port"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_ip_port" />
+
+                <EditText
+                    android:id="@+id/acq_ip_port"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_port_hint" />
+            </RelativeLayout>
+
+            <View style="@style/LongLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_address_2nd"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/space_vertical_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_ip"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/acq_ip_2nd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_size_value"
+                    android:inputType="number|numberDecimal"
+                    android:digits="0123456789."
+                    android:hint="@string/acq_ip_hint"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_port"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_ip_port_2nd" />
+
+                <EditText
+                    android:id="@+id/acq_ip_port_2nd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_port_hint" />
+            </RelativeLayout>
+
+
+            <View style="@style/LongLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_address_3rd"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/space_vertical_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_ip"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/acq_ip_3rd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_size_value"
+                    android:inputType="number|numberDecimal"
+                    android:digits="0123456789."
+                    android:hint="@string/acq_ip_hint"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_port"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_ip_port_3rd" />
+
+                <EditText
+                    android:id="@+id/acq_ip_port_3rd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_port_hint" />
+            </RelativeLayout>
+
+            <View style="@style/LongLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_address_4th"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/space_vertical_small" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_ip"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/acq_ip_4th"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_size_value"
+                    android:inputType="number|numberDecimal"
+                    android:digits="0123456789."
+                    android:hint="@string/acq_ip_hint"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_port"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_ip_port_4th" />
+
+                <EditText
+                    android:id="@+id/acq_ip_port_4th"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_port_hint" />
+            </RelativeLayout>
+            <Spinner
+                android:id="@+id/acquirer_ssl_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical_small"
+                android:layout_marginBottom="@dimen/space_vertical_small"
+                android:entries="@array/acq_ssl_type_list_entries"
+                android:entryValues="@array/acq_ssl_type_list_entries" />
+
+
+
+            <View style="@style/LongLine"/>
+
+            <RelativeLayout
+                android:id="@+id/acq_qr_timeout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_qr_timeout"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_qr_timeout" />
+
+                <EditText
+                    android:id="@+id/acq_qr_timeout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_timeout_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_host_timeout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_host_timeout"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_host_timeout" />
+
+                <EditText
+                    android:id="@+id/acq_host_timeout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_timeout_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_retry_timeout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_prompt_retry_timeout"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toStartOf="@+id/acq_retry_timeout" />
+
+                <EditText
+                    android:id="@+id/acq_retry_timeout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:maxLength="2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_value"
+                    android:layout_gravity="center_vertical|end"
+                    android:inputType="number"
+                    android:hint="@string/acq_timeout_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/acquirer_force_settle_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/space_vertical_small"
+                    android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                        android:id="@+id/acquirer_force_settle_time_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start"
+                        android:text="@string/acq_force_settle_time"
+                        android:textColor="@color/primary_text_light"
+                        android:textSize="@dimen/font_size_prompt" />
+
+                <EditText
+                        android:id="@+id/acquirer_force_settle_time_textbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:hint="@string/acq_force_settle_time_hint"
+                        android:inputType="time"
+                        android:maxLines="1"
+                        android:paddingTop="-7dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text_light"
+                        android:textSize="@dimen/font_size_value"
+                        app:layout_constraintEnd_toEndOf="@id/acquirer_force_settle_time_label" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_disable_trick_feed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_disable_trick_feed"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acquirer_disable_trick_feed" />
+
+                <CheckBox
+                    android:id="@+id/acquirer_disable_trick_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_support_keyin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_support_keyin"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_keyin" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_keyin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_support_qr_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_support_qr"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_qr" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_qr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_tle"
+                    android:text="@string/acq_support_tle"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_tle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_support_upi"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_upi" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_upi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_test_mode"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_test_mode" />
+
+                <CheckBox
+                    android:id="@+id/acq_test_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_tc_advice"
+                    android:text="@string/acq_support_tc_advice"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_tc_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_support_erm"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_erm" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_erm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_support_small_amt"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_support_small_amt" />
+
+                <CheckBox
+                    android:id="@+id/acq_support_small_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acq_signature_required_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_enable_signature"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_signature_required" />
+
+                <CheckBox
+                    android:id="@+id/acq_signature_required"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_enable_control_limit"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_enable_control_limit" />
+
+                <CheckBox
+                    android:id="@+id/acq_enable_control_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_enable_input_phone_number"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_enable_input_phone_number" />
+
+                <CheckBox
+                    android:id="@+id/acq_enable_input_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/acq_biller_service_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_biller_service"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/biller_service_promptpay"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="18"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="text"
+                    android:hint="@string/acq_biller_service" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/biller_id_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_biller_id"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/biller_id_promptpay"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="text"
+                    android:hint="@string/acq_merchant_id_hint" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instalment_min_amount_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_min_amt"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/instalment_min_amount"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:maxLength="15"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/instalment_terms_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instalment_terms_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_terms"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/instalment_terms"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_edit_text"
+                    android:inputType="text" />
+            </LinearLayout>
+            <View android:id="@+id/acq_c_scan_b_line"
+                style="@style/LongLine"/>
+
+            <TextView
+                android:id="@+id/acq_c_scan_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_dolfin_cscanb"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/space_vertical_small" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/space_vertical_small"
+                android:paddingBottom="@dimen/space_vertical_small">
+
+                <TextView
+                    android:id="@+id/acq_c_scan_b_enable_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/acq_dolfin_is_enable_cscanb"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/primary_text_light"
+                    android:textSize="@dimen/font_size_prompt"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toStartOf="@+id/acq_enable_c_scan_b" />
+
+                <CheckBox
+                    android:id="@+id/acq_enable_c_scan_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/dolfin_display_qr_timeout_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_dolfin_display_qr_timeout"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/dolfin_display_qr_timeout"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_gravity="end"
+                android:textColor="@color/primary_text_light"
+                android:maxLength="3"
+                android:textSize="@dimen/font_edit_text"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/dolfin_retry_delay_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_dolfin_delay_retry"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/dolfin_retry_delay"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_gravity="end"
+                android:textColor="@color/primary_text_light"
+                android:maxLength="3"
+                android:textSize="@dimen/font_edit_text"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/dolfin_retry_times_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acq_dolfin_retry_times"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_prompt"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/dolfin_retry_times"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_gravity="end"
+                android:textColor="@color/primary_text_light"
+                android:maxLength="3"
+                android:textSize="@dimen/font_edit_text"
+                android:inputType="number" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="@string/edc_merchant_name"
+        android:key="@string/EDC_MERCHANT_NAME_EN"
+        android:maxLength="60"
+        android:selectAllOnFocus="true"
+        android:title="@string/edc_merchant_name" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="@string/edc_merchant_address"
+        android:key="@string/EDC_MERCHANT_ADDRESS"
+        android:selectAllOnFocus="true"
+        android:title="@string/edc_merchant_address" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="@string/edc_merchant_address1"
+        android:key="@string/EDC_MERCHANT_ADDRESS1"
+        android:selectAllOnFocus="true"
+        android:title="@string/edc_merchant_address1" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/currency_list"
+        android:key="@string/EDC_CURRENCY_LIST"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/currency_list" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="@string/edc_ped_mode_prompt"
+        android:entries="@array/edc_ped_mode_entries"
+        android:entryValues="@array/edc_ped_mode_value_entries"
+        android:key="@string/EDC_PED_MODE"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/edc_ped_mode" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="1"
+        android:digits="1230"
+        android:ems="1"
+        android:inputType="number"
+        android:key="@string/EDC_RECEIPT_NUM"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/edc_receipt_no" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="000001"
+        android:digits="1234567890"
+        android:ems="6"
+        android:inputType="number"
+        android:key="@string/EDC_STAN_NO"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/edc_stan_no" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="000001"
+        android:digits="1234567890"
+        android:ems="6"
+        android:inputType="number"
+        android:key="@string/EDC_TRACE_NO"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/edc_trace_no" />
+    <com.pax.view.EditTextPreferenceFix
+        android:defaultValue="000001"
+        android:digits="1234567890"
+        android:ems="6"
+        android:inputType="number"
+        android:key="@string/EDC_NUM_OF_SLIP_LINEPAY"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/edc_num_of_slip_linepay" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/EDC_SUPPORT_REFUND"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_refund" />
+    <!--<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/EDC_SUPPORT_TIP"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_tip" />-->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/EDC_ENABLE_OFFLINE"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_offline_menu" />
+<!--    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/edc_tip_adjust_title">-->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_TIP_ADJUST"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_tip_adjustment" />
+        <com.pax.view.EditTextPreferenceFix
+            android:defaultValue="15"
+            android:digits="1234567890"
+            android:ems="6"
+            android:inputType="number"
+            android:key="@string/EDC_MAX_PERCENTAGE_TIP_ADJUST"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edc_tip_adjust_percent" />
+<!--    </PreferenceCategory>-->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/EDC_CONFIRM_PROCESS"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_confirm_proc" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/SUPPORT_USER_AGREEMENT"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_user_agreement" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/EDC_ENABLE_IMG_ON_END_RECEIPT"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_img_end_receipt" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/EDC_ENABLE_QR_BARCODE_ALIPAY_WECHAT"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_qr_barcode_alipay_wechat"/>
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/EDC_ENABLE_QR_BARCODE_COD"
+        android:summaryOff="@string/no"
+        android:summaryOn="@string/yes"
+        android:title="@string/edc_enable_qr_barcode_cod" />
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/paperless">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_PAPERLESS"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_paperless" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:inputType="textUri"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_HOST"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_host_name" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_PORT"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_port" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_USERNAME"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_username" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_PASSWORD"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_password" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:key="@string/EDC_SMTP_ENABLE_SSL"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_smtp_enable_ssl" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_SMTP_ENABLE_SSL"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_SSL_PORT"
+            android:maxLength="5"
+            android:maxLines="1"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_ssl_port" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_ENABLE_PAPERLESS"
+            android:ems="50"
+            android:key="@string/EDC_SMTP_FROM"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:title="@string/edc_smtp_from" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/e_signature">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_E_SIGNATURE"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_e_signature" />
+    </PreferenceCategory>
+
+    <!-- use for kerry api -->
+<!--    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/kerry_api">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_KERRY_API"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_kerry_api" />
+        <com.pax.view.EditTextPreferenceFix
+            android:dependency="@string/EDC_ENABLE_KERRY_API"
+            android:defaultValue="https://pmgw.th.kerryexpress.com/pmgw/edc/response"
+            android:key="@string/EDC_KERRY_API_URL"
+            android:selectAllOnFocus="true"
+            android:title="@string/edc_kerry_api_url_title" />
+    </PreferenceCategory>-->
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/grand_total">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_GRAND_TOTAL"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_grand_total" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/camera_setting">
+        <ListPreference
+            android:defaultValue="@string/front_camera"
+            android:dialogTitle="@string/edc_default_camera_prompt"
+            android:entries="@array/facing_camera"
+            android:entryValues="@array/facing_camera_value"
+            android:key="@string/EDC_DEFAULT_CAMERA"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/edc_default_camera" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/qr_barcode">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_QR_BARCODE"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_qr_barcode" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/kiosk_mode">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_KIOSK_MODE"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_kiosk_mode" />
+        <com.pax.view.EditTextPreferenceFix
+            android:capitalize="words"
+            android:dependency="@string/EDC_KIOSK_MODE"
+            android:ems="50"
+            android:key="@string/EDC_KIOSK_TIMEOUT"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/edc_kiosk_mode_timeout" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/contactless">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_CONTACTLESS"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_VISA"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_visa" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_MASTER"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_master" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_JCB"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_jcb" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_UP"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_up" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_TPN"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_tpn" />
+        <CheckBoxPreference
+            android:dependency="@string/EDC_ENABLE_CONTACTLESS"
+            android:defaultValue="true"
+            android:key="@string/EDC_ENABLE_CONTACTLESS_AMEX"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_contactless_amex" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/enable_keyin">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_KEYIN"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_keyin"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/enable_preauth">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_PREAUTH"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_preauth"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/enable_loggly">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_LOGGLY"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_enable_loggly" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/void_with_stand">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_VOID_WITH_STAND"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/edc_vpid_with_stand" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/external_devices">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_SUPPORT_SP200"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/support_sp200" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/dynamic_offline_mode">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/KBANK_DYNAMIC_OFFLINE_SHOW_MENU"
+            android:summaryOff="@string/no"
+            android:summaryOn="@string/yes"
+            android:title="@string/dynamic_offline_show_menu" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/edc_amount_limit">
+        <com.pax.view.EditTextAmountPreference
+            android:gravity="end"
+            android:defaultValue="999999999999"
+            android:key="@string/EDC_MAXIMUM_AMOUNT"
+            android:maxLines="1"
+            android:maxLength="19"
+            android:title="@string/edc_amount_limit_max"
+            android:inputType="numberDecimal" />
+        <com.pax.view.EditTextAmountPreference
+            android:gravity="end"
+            android:defaultValue="0"
+            android:key="@string/EDC_MINIMUM_AMOUNT"
+            android:maxLines="1"
+            android:maxLength="19"
+            android:title="@string/edc_amount_limit_min"
+            android:inputType="numberDecimal" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/edc_ctls_trans_limit">
+        <com.pax.view.EditTextAmountPreference
+            android:gravity="end"
+            android:defaultValue="999999999999"
+            android:key="@string/EDC_CTLS_TRANS_LIMIT"
+            android:maxLines="1"
+            android:maxLength="19"
+            android:inputType="numberDecimal" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:persistent="false"
+        android:title="@string/edc_duo_brand_app_force_auto_sel">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/EDC_ENABLE_FORCE_SEL_APP_FOR_DUO_BRAND_CARD"
+            android:summaryOff="@string/disabled"
+            android:summaryOn="@string/enabled"
+            android:title="@string/edc_duo_brand_app_force_auto_sel_label" />
+    </PreferenceCategory>
+</PreferenceScreen>

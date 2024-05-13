@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="@dimen/space_vertical_small"
+        android:background="@drawable/edit_frame"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_first_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_vertical_large"
+            android:gravity="center"
+            android:textColor="@color/secondary_text_light"
+            android:textSize="@dimen/clss_light" />
+
+        <TextView
+            android:id="@+id/text_second_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/secondary_text_light"
+            android:textSize="@dimen/clss_light" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/no_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/btn_bg_dark"
+            android:text="@string/dialog_no"
+            android:textColor="@color/primary_text_light"
+            android:textSize="@dimen/font_button"  />
+
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/button_height"
+            android:background="@drawable/btn_bg_light"
+            android:text="@string/dialog_yes"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DO NOT TRANSLATE THIS FILE -->
+
+<resources>
+
+    <!-- 交易管理 ,交易开关控制,传统类交易 -->
+    <string name="lan">LAN</string>
+    <string name="mobile">MOBILE</string>
+    <string name="wifi">WIFI</string>
+    <string name="demo">DEMO</string>
+
+    <string-array name="commParam_menu_comm_mode_list_entries">
+        <item>@string/lan</item>
+        <item>@string/mobile</item>
+        <item>@string/wifi</item>
+        <item>@string/demo</item>
+    </string-array>
+    <string-array name="commParam_menu_comm_mode_values_list_entries">
+        <item>@string/lan</item>
+        <item>@string/mobile</item>
+        <item>@string/wifi</item>
+        <item>@string/demo</item>
+    </string-array>
+
+    <string name="NO_SSL">NO SSL</string>
+    <string name="SSL">SSL</string>
+    <string-array name="acq_ssl_type_list_entries">
+        <item>@string/NO_SSL</item>
+        <item>@string/SSL</item>
+    </string-array>
+
+
+    <string-array name="edc_ped_mode_entries">
+        <item>Internal</item>
+        <item>External</item>
+    </string-array>
+    <string-array name="edc_ped_mode_value_entries">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="edc_connect_time_entries">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+    </string-array>
+
+    <!-- 通讯参数的wifi -->
+    <string-array name="wifi_status">
+        <item>@string/wifi_scanning</item>
+        <item>@string/wifi_connecting</item>
+        <item>@string/wifi_authenticating</item>
+        <item>@string/wifi_getting_ip</item>
+        <item>@string/wifi_connected</item>
+        <item>@string/wifi_paused</item>
+        <item>@string/wifi_disconnecting</item>
+        <item>@string/wifi_disconnected</item>
+        <item>@string/wifi_failed</item>
+    </string-array>
+
+    <string name="keyManage_menu_des">des</string>
+    <string name="keyManage_menu_3des">3des</string>
+
+    <string-array name="keyManage_menu_key_des_type_list_entries">
+        <item>@string/keyManage_menu_des</item>
+        <item>@string/keyManage_menu_3des</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>ภาษาไทย</item>
+    </string-array>
+
+    <string-array name="bss_disable">
+        <item>BSS Disable</item>
+        <item>BSS Enable</item>
+    </string-array>
+
+    <string-array name="screen_sleep_time">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minutes</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="screen_sleep_time_mills">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="disable">DISABLE</string>
+    <string name="auto">AUTO</string>
+    <string name="hypercom">HYPERCOM</string>
+    <string name="posnet">POSNET</string>
+    <string-array name="linkpos_protocols">
+        <item>@string/disable</item>
+        <item>@string/auto</item>
+        <item>@string/hypercom</item>
+        <item>@string/posnet</item>
+    </string-array>
+    <string-array name="linkpos_protocols_value">
+        <item>@string/disable</item>
+        <item>@string/auto</item>
+        <item>@string/hypercom</item>
+        <item>@string/posnet</item>
+    </string-array>
+
+    <string name="linkpos_bluetooth">BLUETOOTH</string>
+    <string name="linkpos_tcp">TCP</string>
+    <string name="linkpos_usb_to_serial">USB_TO_SERIAL</string>
+    <string-array name="linkpos_comm_types">
+        <item>@string/linkpos_bluetooth</item>
+        <item>@string/linkpos_tcp</item>
+        <item>@string/linkpos_usb_to_serial</item>
+    </string-array>
+    <string-array name="linkpos_comm_types_value">
+        <item>@string/linkpos_bluetooth</item>
+        <item>@string/linkpos_tcp</item>
+        <item>@string/linkpos_usb_to_serial</item>
+    </string-array>
+
+    <string name="apn_none">None</string>
+    <!--<string name="bbl">bbl</string>
+    <string name="corp_edc_bbl">corp.edc.bbl</string>
+    <string name="m2m_tns_prod1">m2m.tns.prod1</string>
+    <string name="m2m_tns_int1">m2m.tns.int1</string>-->
+    <string name="kbank">kbank</string>
+    <string name="kbank_dev">kbank.dev</string>
+    <string name="kbanks">kbanks</string>
+    <string name="kbanks_dev">kbanks.dev</string>
+    <string name="ptt_edc">ptt.edc</string>
+    <string name="edc_kbank">EDC.KBANK</string>
+    <string name="taps_dev">TAPS.DEV</string>
+    <string-array name="access_points">
+        <item>@string/apn_none</item>
+        <!--<item>@string/bbl</item>
+        <item>@string/corp_edc_bbl</item>
+        <item>@string/m2m_tns_prod1</item>
+        <item>@string/m2m_tns_int1</item>-->
+        <item>@string/kbank</item>
+        <item>@string/kbank_dev</item>
+        <item>@string/kbanks</item>
+        <item>@string/kbanks_dev</item>
+        <item>@string/ptt_edc</item>
+        <item>@string/edc_kbank</item>
+        <item>@string/taps_dev</item>
+    </string-array>
+    <string-array name="access_points_value">
+        <item>@string/apn_none</item>
+        <!--<item>@string/bbl</item>
+        <item>@string/corp_edc_bbl</item>
+        <item>@string/m2m_tns_prod1</item>
+        <item>@string/m2m_tns_int1</item>-->
+        <item>@string/kbank</item>
+        <item>@string/kbank_dev</item>
+        <item>@string/kbanks</item>
+        <item>@string/kbanks_dev</item>
+        <item>@string/ptt_edc</item>
+        <item>@string/edc_kbank</item>
+        <item>@string/taps_dev</item>
+    </string-array>
+
+    <string name="front_camera">Front-Facing Camera</string>
+    <string name="back_camera">Back-Facing Camera</string>
+    <string-array name="facing_camera">
+        <item>@string/front_camera</item>
+        <item>@string/back_camera</item>
+    </string-array>
+    <string-array name="facing_camera_value">
+        <item>@string/front_camera</item>
+        <item>@string/back_camera</item>
+    </string-array>
+
+    <string-array name="redeem_discount_type_kbank">
+        <item>Fix Point</item>
+        <item>Var Point</item>
+    </string-array>
+    <string-array name="redeem_discount_type_kbank_value">
+        <item>0</item>
+        <item>89999</item>
+    </string-array>
+
+    <string-array name="instalment_promo_type_kbank">
+        <item>ALL Product</item>
+        <item>PROMO Product</item>
+    </string-array>
+    <string-array name="instalment_promo_type_kbank_value">
+        <item>99999999999999</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="edc_instalment_amex_entries">
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>9 Months</item>
+        <item>10 Months</item>
+    </string-array>
+    <string-array name="edc_instalment_amex_value_entries">
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="edc_redeem_bay_points_entries">
+        <item>1000 Points</item>
+        <item>2000 Points</item>
+        <item>3000 Points</item>
+        <item>Other Points</item>
+        <item>Promo Code and Points</item>
+    </string-array>
+    <string-array name="edc_redeem_bay_points_value_entries">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>other</item>
+        <item>code</item>
+    </string-array>
+
+    <string-array name="edc_redeem_bay_catalog_entries">
+        <item>Full Point</item>
+        <item>Partial Point</item>
+    </string-array>
+    <string-array name="edc_redeem_bay_catalog_value_entries">
+        <item>full</item>
+        <item>partial</item>
+    </string-array>
+</resources>

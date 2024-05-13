@@ -1,0 +1,2002 @@
+[
+    /*{
+        "name":"AMEX_1",
+        "panRangeLow":"3400000000",
+        "panRangeHigh":"3499999999",
+        "panLength":15,
+        "issuerName":"AMEX-CARD",
+        "issuerBrand": "AMEX-CARD"
+    },
+    {
+        "name":"AMEX_2",
+        "panRangeLow":"3700000000",
+        "panRangeHigh":"3799999999",
+        "panLength":15,
+        "issuerName":"AMEX-CARD",
+        "issuerBrand": "AMEX-CARD"
+    },*/
+    {
+        "name":"DinersClub_1",
+        "panRangeLow":"3000000000",
+        "panRangeHigh":"3059999999",/*3699999999 6599999999*/
+        "panLength":14,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_2",
+        "panRangeLow":"6011770000",
+        "panRangeHigh":"6011799999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_3",
+        "panRangeLow":"6011860000",
+        "panRangeHigh":"6011999999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_4",
+        "panRangeLow":"6440000000",
+        "panRangeHigh":"6599999999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_5",
+        "panRangeLow":"3095000000",
+        "panRangeHigh":"3095999999",
+        "panLength":14,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_6",
+        "panRangeLow":"3600000000",
+        "panRangeHigh":"3699999999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_7",
+        "panRangeLow":"3800000000",
+        "panRangeHigh":"3999999999",
+        "panLength":14,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_8",
+        "panRangeLow":"6011000000",
+        "panRangeHigh":"6011039999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_9",
+        "panRangeLow":"6011040000",
+        "panRangeHigh":"6011049999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_10",
+        "panRangeLow":"6011050000",
+        "panRangeHigh":"6011099999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_11",
+        "panRangeLow":"6011200000",
+        "panRangeHigh":"6011499999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name":"DinersClub_12",
+        "panRangeLow":"6011740000",
+        "panRangeHigh":"6011799999",
+        "panLength":0,
+        "issuerName":"DinersClub",
+        "issuerBrand": "DinersClub"
+    },
+    {
+        "name": "MASTER_1",
+        "panRangeLow": "5000000000",/*5100000000*/
+        "panRangeHigh": "5999999999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "MASTER_2",
+        "panRangeLow": "2221000000",
+        "panRangeHigh": "2720999999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KTB-MASTER1",
+        "panRangeLow": "5043670000",
+        "panRangeHigh": "5043679999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "CITI-MASTER1",
+        "panRangeLow": "5081270000",
+        "panRangeHigh": "5081279999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER1",
+        "panRangeLow": "5105030000",
+        "panRangeHigh": "5105039999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER1",
+        "panRangeLow": "5149500000",
+        "panRangeHigh": "5149599999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "ASA-MASTER1",
+        "panRangeLow": "5178240000",
+        "panRangeHigh": "5178249999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER1",
+        "panRangeLow": "5178250000",
+        "panRangeHigh": "5178259999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER2",
+        "panRangeLow": "5178280000",
+        "panRangeHigh": "5178289999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER2",
+        "panRangeLow": "5180970000",
+        "panRangeHigh": "5180979999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BAY-MASTER1",
+        "panRangeLow": "5185470000",
+        "panRangeHigh": "5185479999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER3",
+        "panRangeLow": "5188800000",
+        "panRangeHigh": "5188809999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TDB-MASTER1",
+        "panRangeLow": "5188960000",
+        "panRangeHigh": "5188969999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER4",
+        "panRangeLow": "5189180000",
+        "panRangeHigh": "5189189999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TDB-MASTER2",
+        "panRangeLow": "5192520000",
+        "panRangeHigh": "5192529999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "COK-MASTER1",
+        "panRangeLow": "5218810000",
+        "panRangeHigh": "5218819999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER3",
+        "panRangeLow": "5221710000",
+        "panRangeHigh": "5221719999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BAY-MASTER2",
+        "panRangeLow": "5239130000",
+        "panRangeHigh": "5239139999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER5",
+        "panRangeLow": "5239620000",
+        "panRangeHigh": "5239629999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "STC-MASTER1",
+        "panRangeLow": "5243290000",
+        "panRangeHigh": "5243299999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "COK-MASTER2",
+        "panRangeLow": "5247040000",
+        "panRangeHigh": "5247049999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "COK-MASTER3",
+        "panRangeLow": "5254940000",
+        "panRangeHigh": "5254949999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-T1C-REDZ",
+        "panRangeLow": "5256210000",
+        "panRangeHigh": "5256219999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-T1C",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-MASTER1",
+        "panRangeLow": "5256680000",
+        "panRangeHigh": "5256689999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-MASTER2",
+        "panRangeLow": "5256690000",
+        "panRangeHigh": "5256699999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-MASTER3",
+        "panRangeLow": "5256670000",
+        "panRangeHigh": "5256679999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-MASTER4",
+        "panRangeLow": "5285600000",
+        "panRangeHigh": "5285609999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "GCS-MASTER5",
+        "panRangeLow": "5377980000",
+        "panRangeHigh": "5377989999",
+        "panLength": 0,
+        "issuerName": "CENTRAL-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER4",
+        "panRangeLow": "5256710000",
+        "panRangeHigh": "5256719999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "UOBT-MASTER",
+        "panRangeLow": "5257200000",
+        "panRangeHigh": "5257209999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TBANK-MASTER1",
+        "panRangeLow": "5264130000",
+        "panRangeHigh": "5264139999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER5",
+        "panRangeLow": "5268750000",
+        "panRangeHigh": "5268759999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER6",
+        "panRangeLow": "5275950000",
+        "panRangeHigh": "5275959999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AEON-MASTER7",
+        "panRangeLow": "5280110000",
+        "panRangeHigh": "5280119999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "PSCL-MASTER",
+        "panRangeLow": "5286360000",
+        "panRangeHigh": "5286369999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TBANK-MASTER2",
+        "panRangeLow": "5399250000",
+        "panRangeHigh": "5399259999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TMB-MASTER1",
+        "panRangeLow": "5400400000",
+        "panRangeHigh": "5400409999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BMB-MASTER1",
+        "panRangeLow": "5401800000",
+        "panRangeHigh": "5401809999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BAY-MASTER3",
+        "panRangeLow": "5404300000",
+        "panRangeHigh": "5404309999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "CITI-MASTER2",
+        "panRangeLow": "5404320000",
+        "panRangeHigh": "5404329999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BAY-MASTER4",
+        "panRangeLow": "5404740000",
+        "panRangeHigh": "5404749999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MC-GOLD",
+        "panRangeLow": "5404880000",
+        "panRangeHigh": "5404889999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER6",
+        "panRangeLow": "5404882000",
+        "panRangeHigh": "5404882999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER2",
+        "panRangeLow": "5404920000",
+        "panRangeHigh": "5404929999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KTB-MASTER2",
+        "panRangeLow": "5406040000",
+        "panRangeHigh": "5406049999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KTB-MASTER3",
+        "panRangeLow": "5406050000",
+        "panRangeHigh": "5406059999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KTB-MASTER4",
+        "panRangeLow": "5407160000",
+        "panRangeHigh": "5407169999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER3",
+        "panRangeLow": "5410290000",
+        "panRangeHigh": "5410299999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER7",
+        "panRangeLow": "5411760000",
+        "panRangeHigh": "5411769999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KBANK-MASTER8",
+        "panRangeLow": "5411762000",
+        "panRangeHigh": "5411762999",
+        "panLength": 0,
+        "issuerName": "KBank-MC",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER4",
+        "panRangeLow": "5414960000",
+        "panRangeHigh": "5414969999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "HSBC-MASTER1",
+        "panRangeLow": "5416900000",
+        "panRangeHigh": "5416909999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "STC-MASTER2",
+        "panRangeLow": "5418590000",
+        "panRangeHigh": "5418599999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "ASA-MASTER2",
+        "panRangeLow": "5418780000",
+        "panRangeHigh": "5418789999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TMB-MASTER2",
+        "panRangeLow": "5420780000",
+        "panRangeHigh": "5420789999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BAY-MASTER5",
+        "panRangeLow": "5423800000",
+        "panRangeHigh": "5423809999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BMB-MASTER2",
+        "panRangeLow": "5424530000",
+        "panRangeHigh": "5424539999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "ASA-MASTER3",
+        "panRangeLow": "5432150000",
+        "panRangeHigh": "5432159999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "KTB-MASTER5",
+        "panRangeLow": "5434200000",
+        "panRangeHigh": "5434209999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "CITI-MASTER3",
+        "panRangeLow": "5434490000",
+        "panRangeHigh": "5434499999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "HSBC-MASTER2",
+        "panRangeLow": "5436730000",
+        "panRangeHigh": "5436739999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "STC-MASTER3",
+        "panRangeLow": "5437110000",
+        "panRangeHigh": "5437119999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BBL-MASTER1",
+        "panRangeLow": "5444820000",
+        "panRangeHigh": "5444829999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BBL-MASTER2",
+        "panRangeLow": "5444850000",
+        "panRangeHigh": "5444859999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "BBL-MASTER3",
+        "panRangeLow": "5444880000",
+        "panRangeHigh": "5444889999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AIG-MASTER1",
+        "panRangeLow": "5445720000",
+        "panRangeHigh": "5445729999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TDB-MASTER3",
+        "panRangeLow": "5460940000",
+        "panRangeHigh": "5460949999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "TDB-MASTER4",
+        "panRangeLow": "5460950000",
+        "panRangeHigh": "5460959999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "AIG-MASTER2",
+        "panRangeLow": "5468480000",
+        "panRangeHigh": "5468489999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "HSBC-MASTER3",
+        "panRangeLow": "5521650000",
+        "panRangeHigh": "5521659999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER5",
+        "panRangeLow": "5577550000",
+        "panRangeHigh": "5577559999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name": "SCBT-MASTER6",
+        "panRangeLow": "5577720000",
+        "panRangeHigh": "5577729999",
+        "panLength": 0,
+        "issuerName": "MASTERCARD",
+        "issuerBrand": "MASTERCARD"
+    },
+    {
+        "name":"UnionPay_1",
+        "panRangeLow":"6000000000",
+        "panRangeHigh":"6999999999",
+        "panLength":0,
+        "issuerName":"UnionPay",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"UnionPay_2",
+        "panRangeLow":"8100000000",
+        "panRangeHigh":"8199999999",
+        "panLength":0,
+        "issuerName":"UnionPay",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"UnionPay_3",
+        "panRangeLow":"9000000000",
+        "panRangeHigh":"9999999999",
+        "panLength":0,
+        "issuerName":"UnionPay",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"UnionPay_4",
+        "panRangeLow":"9300000000",
+        "panRangeHigh":"9399999999",
+        "panLength":0,
+        "issuerName":"UnionPay",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"UnionPay_5",
+        "panRangeLow":"9400000000",
+        "panRangeHigh":"9499999999",
+        "panLength":0,
+        "issuerName":"UnionPay",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"JCB",
+        "panRangeLow":"3528000000",
+        "panRangeHigh":"3589999999",
+        "panLength":16,
+        "issuerName":"JCB-CARD",
+        "issuerBrand": "JCB-CARD"
+    },
+    {
+        "name": "VISA-CARD",
+        "panRangeLow": "4000000000",
+        "panRangeHigh": "4999999999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA1",
+        "panRangeLow": "4023390000",
+        "panRangeHigh": "4023399999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA1",
+        "panRangeLow": "4033750000",
+        "panRangeHigh": "4033759999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA1",
+        "panRangeLow": "4050160000",
+        "panRangeHigh": "4050169999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA1",
+        "panRangeLow": "4050210000",
+        "panRangeHigh": "4050219999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA2",
+        "panRangeLow": "4075073200",
+        "panRangeHigh": "4075079909",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA1",
+        "panRangeLow": "4075240000",
+        "panRangeHigh": "4075249999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA1",
+        "panRangeLow": "4075390000",
+        "panRangeHigh": "4075399999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "PSCL-VISA1",
+        "panRangeLow": "4077020000",
+        "panRangeHigh": "4077029999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA1",
+        "panRangeLow": "4090610000",
+        "panRangeHigh": "4090619999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA2",
+        "panRangeLow": "4093030000",
+        "panRangeHigh": "4093039999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA3",
+        "panRangeLow": "4093040000",
+        "panRangeHigh": "4093049999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GCS-VISA1",
+        "panRangeLow": "4093370000",
+        "panRangeHigh": "4093379999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GCS-VISA2",
+        "panRangeLow": "4093380000",
+        "panRangeHigh": "4093389999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GCS-VISA3",
+        "panRangeLow": "4093450000",
+        "panRangeHigh": "4093459999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GCS-VISA4",
+        "panRangeLow": "4093460000",
+        "panRangeHigh": "4093469999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TBANK-VISA1",
+        "panRangeLow": "4141670000",
+        "panRangeHigh": "4141679999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TBANK-VISA2",
+        "panRangeLow": "4141690000",
+        "panRangeHigh": "4141699999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA3",
+        "panRangeLow": "4162020000",
+        "panRangeHigh": "4162029999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA4",
+        "panRangeLow": "4181270000",
+        "panRangeHigh": "4181279999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA1",
+        "panRangeLow": "4213150000",
+        "panRangeHigh": "4213159999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GSB-VISA1",
+        "panRangeLow": "4213540000",
+        "panRangeHigh": "4213549999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA4",
+        "panRangeLow": "4214650000",
+        "panRangeHigh": "4214659999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA5",
+        "panRangeLow": "4214670000",
+        "panRangeHigh": "4214679999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "PSCL-VISA2",
+        "panRangeLow": "4214690000",
+        "panRangeHigh": "4214699999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA6",
+        "panRangeLow": "4214830000",
+        "panRangeHigh": "4214839999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA2",
+        "panRangeLow": "4215830000",
+        "panRangeHigh": "4215839999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA1",
+        "panRangeLow": "4216680000",
+        "panRangeHigh": "4216689999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA2",
+        "panRangeLow": "4220720000",
+        "panRangeHigh": "4220729999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VS-SHOPEE",
+        "panRangeLow": "4221820000",
+        "panRangeHigh": "4221820099",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA2",
+        "panRangeLow": "4265790000",
+        "panRangeHigh": "4265799999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA5",
+        "panRangeLow": "4283730000",
+        "panRangeHigh": "4283739999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA7",
+        "panRangeLow": "4283800000",
+        "panRangeHigh": "4283809999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA2",
+        "panRangeLow": "4304450000",
+        "panRangeHigh": "4304459999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "ASA-VISA1",
+        "panRangeLow": "4311150000",
+        "panRangeHigh": "4311159999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "ASA-VISA2",
+        "panRangeLow": "4311160000",
+        "panRangeHigh": "4311169999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA8",
+        "panRangeLow": "4315080000",
+        "panRangeHigh": "4315089999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "ASA-VISA3",
+        "panRangeLow": "4315170000",
+        "panRangeHigh": "4315179999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "ASA-VISA4",
+        "panRangeLow": "4332420000",
+        "panRangeHigh": "4332429999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA2",
+        "panRangeLow": "4346620000",
+        "panRangeHigh": "4346629999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "HSBC-VISA1",
+        "panRangeLow": "4349400000",
+        "panRangeHigh": "4349409999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA3",
+        "panRangeLow": "4367590000",
+        "panRangeHigh": "4367599999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA3",
+        "panRangeLow": "4368070000",
+        "panRangeHigh": "4368079999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA4",
+        "panRangeLow": "4377500000",
+        "panRangeHigh": "4377509999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA6",
+        "panRangeLow": "4386790000",
+        "panRangeHigh": "4386799999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA3",
+        "panRangeLow": "4391370000",
+        "panRangeHigh": "4391379999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA3",
+        "panRangeLow": "4392380000",
+        "panRangeHigh": "4392389999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA9",
+        "panRangeLow": "4417700000",
+        "panRangeHigh": "4417709999",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VS-MTL1",
+        "panRangeLow": "4417703200",
+        "panRangeHigh": "4417703299",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "VISA-BDMS1",
+        "panRangeLow": "4417703800",
+        "panRangeHigh": "4417703899",
+        "panLength": 0,
+        "issuerName": "VISA-BDMS",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VS-MTL2",
+        "panRangeLow": "4417707400",
+        "panRangeHigh": "4417707499",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA4",
+        "panRangeLow": "4423080000",
+        "panRangeHigh": "4423089999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA2",
+        "panRangeLow": "4424410000",
+        "panRangeHigh": "4424419999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA3",
+        "panRangeLow": "4484270000",
+        "panRangeHigh": "4484279999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA4",
+        "panRangeLow": "4499320000",
+        "panRangeHigh": "4499329999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AIG-VISA1",
+        "panRangeLow": "4505780000",
+        "panRangeHigh": "4505789999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AIG-VISA2",
+        "panRangeLow": "4505790000",
+        "panRangeHigh": "4505799999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AIG-VISA3",
+        "panRangeLow": "4505800000",
+        "panRangeHigh": "4505809999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA5",
+        "panRangeLow": "4513470000",
+        "panRangeHigh": "4513479999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA5",
+        "panRangeLow": "4514190000",
+        "panRangeHigh": "4514199999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "GSB-VISA2",
+        "panRangeLow": "4514850000",
+        "panRangeHigh": "4514859999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA5",
+        "panRangeLow": "4518060000",
+        "panRangeHigh": "4518069999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA6",
+        "panRangeLow": "4518210000",
+        "panRangeHigh": "4518219999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA7",
+        "panRangeLow": "4518220000",
+        "panRangeHigh": "4518229999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA8",
+        "panRangeLow": "4518230000",
+        "panRangeHigh": "4518239999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA9",
+        "panRangeLow": "4518240000",
+        "panRangeHigh": "4518249999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA6",
+        "panRangeLow": "4532150000",
+        "panRangeHigh": "4532159999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA7",
+        "panRangeLow": "4532160000",
+        "panRangeHigh": "4532169999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA4",
+        "panRangeLow": "4541860000",
+        "panRangeHigh": "4541869999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA7",
+        "panRangeLow": "4543250000",
+        "panRangeHigh": "4543259999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA4",
+        "panRangeLow": "4546230000",
+        "panRangeHigh": "4546239999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA5",
+        "panRangeLow": "4546240000",
+        "panRangeHigh": "4546249999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA6",
+        "panRangeLow": "4546250000",
+        "panRangeHigh": "4546259999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA7",
+        "panRangeLow": "4546260000",
+        "panRangeHigh": "4546269999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA8",
+        "panRangeLow": "4546270000",
+        "panRangeHigh": "4546279999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA9",
+        "panRangeLow": "4546280000",
+        "panRangeHigh": "4546289999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA10",
+        "panRangeLow": "4546290000",
+        "panRangeHigh": "4546299999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA11",
+        "panRangeLow": "4546300000",
+        "panRangeHigh": "4546309999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA12",
+        "panRangeLow": "4546310000",
+        "panRangeHigh": "4546319999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA13",
+        "panRangeLow": "4546320000",
+        "panRangeHigh": "4546329999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA1",
+        "panRangeLow": "4548520000",
+        "panRangeHigh": "4548529999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA6",
+        "panRangeLow": "4550230000",
+        "panRangeHigh": "4550239999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "STC-VISA7",
+        "panRangeLow": "4550240000",
+        "panRangeHigh": "4550249999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA5",
+        "panRangeLow": "4552050000",
+        "panRangeHigh": "4552059999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA6",
+        "panRangeLow": "4552870000",
+        "panRangeHigh": "4552879999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA7",
+        "panRangeLow": "4552930000",
+        "panRangeHigh": "4552939999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA8",
+        "panRangeLow": "4552960000",
+        "panRangeHigh": "4552969999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "CITI-VISA8",
+        "panRangeLow": "4555960000",
+        "panRangeHigh": "4555969999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA10",
+        "panRangeLow": "4560430000",
+        "panRangeHigh": "4560439999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA8",
+        "panRangeLow": "4567230000",
+        "panRangeHigh": "4567239999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA9",
+        "panRangeLow": "4567240000",
+        "panRangeHigh": "4567249999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BMB-VISA1",
+        "panRangeLow": "4599400000",
+        "panRangeHigh": "4599409999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BMB-VISA2",
+        "panRangeLow": "4599410000",
+        "panRangeHigh": "4599419999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA14",
+        "panRangeLow": "4622870000",
+        "panRangeHigh": "4622879999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA15",
+        "panRangeLow": "4622880000",
+        "panRangeHigh": "4622889999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA3",
+        "panRangeLow": "4629590000",
+        "panRangeHigh": "4629599999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA2",
+        "panRangeLow": "4632080000",
+        "panRangeHigh": "4632089999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA2",
+        "panRangeLow": "4640090000",
+        "panRangeHigh": "4640099999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA3",
+        "panRangeLow": "4640210000",
+        "panRangeHigh": "4640219999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA10",
+        "panRangeLow": "4652504100",
+        "panRangeHigh": "4652504299",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA4",
+        "panRangeLow": "4658900000",
+        "panRangeHigh": "4658909999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA5",
+        "panRangeLow": "4658990000",
+        "panRangeHigh": "4658999999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA3",
+        "panRangeLow": "4712840000",
+        "panRangeHigh": "4712849999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA16",
+        "panRangeLow": "4730140000",
+        "panRangeHigh": "4730149999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "ASA-VISA5",
+        "panRangeLow": "4743400000",
+        "panRangeHigh": "4743409999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA4",
+        "panRangeLow": "4773760000",
+        "panRangeHigh": "4773769999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA10",
+        "panRangeLow": "4848300000",
+        "panRangeHigh": "4848309999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA11",
+        "panRangeLow": "4848310000",
+        "panRangeHigh": "4848319999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA4",
+        "panRangeLow": "4862750000",
+        "panRangeHigh": "4862759999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "UOBT-VISA6",
+        "panRangeLow": "4864080000",
+        "panRangeHigh": "4864089999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA12",
+        "panRangeLow": "4865460000",
+        "panRangeHigh": "4865469999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA9",
+        "panRangeLow": "4890940000",
+        "panRangeHigh": "4890949999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BBL-VISA17",
+        "panRangeLow": "4902560000",
+        "panRangeHigh": "4902569999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA5",
+        "panRangeLow": "4907330000",
+        "panRangeHigh": "4907339999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA6",
+        "panRangeLow": "4907340000",
+        "panRangeHigh": "4907349999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TBANK-VISA3",
+        "panRangeLow": "4910060000",
+        "panRangeHigh": "4910069999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA11",
+        "panRangeLow": "4921000000",
+        "panRangeHigh": "4921009999",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA12",
+        "panRangeLow": "4921410000",
+        "panRangeHigh": "4921429999",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "VISA-BDMS2",
+        "panRangeLow": "4921422800",
+        "panRangeHigh": "4921422899",
+        "panLength": 0,
+        "issuerName": "VISA-BDMS",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TBANK-VISA4",
+        "panRangeLow": "4924330000",
+        "panRangeHigh": "4924339999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA5",
+        "panRangeLow": "4924770000",
+        "panRangeHigh": "4924779999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA13",
+        "panRangeLow": "4931120000",
+        "panRangeHigh": "4931129999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KTB-VISA14",
+        "panRangeLow": "4931130000",
+        "panRangeHigh": "4931139999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "AEON-VISA6",
+        "panRangeLow": "4931200000",
+        "panRangeHigh": "4931209999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA11",
+        "panRangeLow": "4934840000",
+        "panRangeHigh": "4934849999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "HSBC-VISA2",
+        "panRangeLow": "4940330000",
+        "panRangeHigh": "4940339999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA12",
+        "panRangeLow": "4941090000",
+        "panRangeHigh": "4941099999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VISA13",
+        "panRangeLow": "4943120000",
+        "panRangeHigh": "4943129999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TBANK-VISA5",
+        "panRangeLow": "4943200000",
+        "panRangeHigh": "4943209999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "BAY-VISA10",
+        "panRangeLow": "4943510000",
+        "panRangeHigh": "4943519999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "KBANK-VS-GOLD",
+        "panRangeLow": "4966120000",
+        "panRangeHigh": "4966129999",
+        "panLength": 0,
+        "issuerName": "KBank-VISA",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "SCBT-VISA7",
+        "panRangeLow": "4966150000",
+        "panRangeHigh": "4966159999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "TMB-VISA13",
+        "panRangeLow": "4966940000",
+        "panRangeHigh": "4966949999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "HSBC-VISA3",
+        "panRangeLow": "4999590000",
+        "panRangeHigh": "4999599999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name": "HSBC-VISA4",
+        "panRangeLow": "4999600000",
+        "panRangeHigh": "4999609999",
+        "panLength": 0,
+        "issuerName": "VISA-CARD",
+        "issuerBrand": "VISA-CARD"
+    },
+    {
+        "name":"TBA_1",
+        "panRangeLow":"6000000000",
+        "panRangeHigh":"6999999999",
+        "panLength":0,
+        "issuerName":"TPN-CARD",
+        "issuerBrand":"TPN"
+    },
+    {
+        "name":"TBA_2",
+        "panRangeLow":"9000000000",
+        "panRangeHigh":"9999999999",
+        "panLength":0,
+        "issuerName":"TPN-CARD",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_PROMPT_1",
+        "panRangeLow": "2221000000",
+        "panRangeHigh": "2720999999",
+        "panLength": 0,
+        "issuerName": "PROMPT-CARD",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_PROMPT_2",
+        "panRangeLow": "5000000000",
+        "panRangeHigh": "5999999999",
+        "panLength": 0,
+        "issuerName": "PROMPT-CARD",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name":"TPN_PROMPT_3",
+        "panRangeLow":"9300000000",
+        "panRangeHigh":"9399999999",
+        "panLength":0,
+        "issuerName":"PROMPT-CARD",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name":"TPN_PROMPT_4",
+        "panRangeLow":"9400000000",
+        "panRangeHigh":"9499999999",
+        "panLength":0,
+        "issuerName":"PROMPT-CARD",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_VISA",
+        "panRangeLow": "4000000000",
+        "panRangeHigh": "4999999999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_KBANK_VISA_1",
+        "panRangeLow": "4124360000",
+        "panRangeHigh": "4124369999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_KBANK_VISA_2",
+        "panRangeLow": "4124660000",
+        "panRangeHigh": "4124669999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_KBANK_VISA_3",
+        "panRangeLow": "4162020000",
+        "panRangeHigh": "4162029999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_KBANK_VISA_4",
+        "panRangeLow": "4199560000",
+        "panRangeHigh": "4199569999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name": "TPN_KBANK_VISA_5",
+        "panRangeLow": "4340760000",
+        "panRangeHigh": "4340769999",
+        "panLength": 0,
+        "issuerName": "VISA-LOCAL",
+        "issuerBrand": "TPN"
+    },
+    {
+        "name":"KBank-UnionPay_1",
+        "panRangeLow":"6258420000",
+        "panRangeHigh":"6258429999",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_2",
+        "panRangeLow":"6258430000",
+        "panRangeHigh":"6258439999",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBANK_JCB_1",
+        "panRangeLow":"3564560000",
+        "panRangeHigh":"3564569999",
+        "panLength":0,
+        "issuerName":"KBank-JCB",
+        "issuerBrand": "JCB-CARD"
+    },
+    {
+        "name":"KBANK_JCB_2",
+        "panRangeLow":"3564570000",
+        "panRangeHigh":"3564579999",
+        "panLength":0,
+        "issuerName":"KBank-JCB",
+        "issuerBrand": "JCB-CARD"
+    },
+    {
+        "name":"KBANK_JCB_3",
+        "panRangeLow":"3564580000",
+        "panRangeHigh":"3564589999",
+        "panLength":0,
+        "issuerName":"KBank-JCB",
+        "issuerBrand": "JCB-CARD"
+    },
+    {
+        "name":"KBank-UnionPay_3",
+        "panRangeLow":"6258421800",
+        "panRangeHigh":"6258421899",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_4",
+        "panRangeLow":"6258420800",
+        "panRangeHigh":"6258420899",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_5",
+        "panRangeLow":"6258433800",
+        "panRangeHigh":"6258433899",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_6",
+        "panRangeLow":"6258434800",
+        "panRangeHigh":"6258434899",
+        "panLength":0,
+        "issuerName":"K-UNIONPAY",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_7",
+        "panRangeLow":"6262800000",
+        "panRangeHigh":"6262800099",
+        "panLength":0,
+        "issuerName":"XpressCash-UP",
+        "issuerBrand": "UnionPay"
+    },
+    {
+        "name":"KBank-UnionPay_8",
+        "panRangeLow":"6262800100",
+        "panRangeHigh":"6262800199",
+        "panLength":0,
+        "issuerName":"XpressCash-UP",
+        "issuerBrand": "UnionPay"
+    }
+]

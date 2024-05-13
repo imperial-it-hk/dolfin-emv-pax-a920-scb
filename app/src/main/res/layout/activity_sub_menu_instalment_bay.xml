@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorBPSDarkGray"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/layout_group_menu"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="16dp">
+
+
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline_main_body_v_25"
+                app:layout_constraintGuide_percent="0.25"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline_main_body_v_50"
+                app:layout_constraintGuide_percent="0.5"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline_main_body_v_75"
+                app:layout_constraintGuide_percent="0.75"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_10"
+                app:layout_constraintGuide_percent="0.05"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/guideline_main_body_h_90"
+                app:layout_constraintGuide_percent="0.35"/>
+        <androidx.constraintlayout.widget.Guideline
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guideline_main_body_h_65" app:layout_constraintGuide_percent="0.65"/>
+        <TextView
+                android:text="BNPL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewDefaultCreditCard"
+                android:textColor="#FFFFFF" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_credit_card_white_18dp"
+                android:id="@+id/imageButtonSpMsc" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline_main_body_v_25"
+                app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+                app:layout_constraintBottom_toTopOf="@id/guideline_main_body_h_90" android:layout_margin="2dp"
+                android:background="@drawable/ripple_button_menu" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="1.0"/>
+        <TextView
+                android:text="@string/menu_specific_msc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewSale"
+                app:layout_constraintStart_toStartOf="@id/imageButtonSpMsc"
+                app:layout_constraintEnd_toEndOf="@id/imageButtonSpMsc"
+                app:layout_constraintBottom_toBottomOf="@id/imageButtonSpMsc" android:layout_marginBottom="2dp"
+                android:textColor="#FFFFFF" android:textAlignment="center"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_credit_card_white_18dp"
+                android:id="@+id/imageButtonNonSpMsc" app:layout_constraintStart_toEndOf="@id/guideline_main_body_v_25"
+                app:layout_constraintEnd_toStartOf="@id/guideline_main_body_v_50"
+                app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+                app:layout_constraintBottom_toTopOf="@id/guideline_main_body_h_90"
+                android:background="@drawable/ripple_button_menu" android:layout_margin="2dp"
+                />
+        <TextView
+                android:text="@string/menu_non_specific_msc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewVoid"
+                app:layout_constraintStart_toStartOf="@id/imageButtonNonSpMsc"
+                app:layout_constraintEnd_toEndOf="@id/imageButtonNonSpMsc"
+                app:layout_constraintBottom_toBottomOf="@id/imageButtonNonSpMsc" android:layout_marginBottom="2dp"
+                android:textColor="#FFFFFF" android:textAlignment="center"/>
+        <!--<ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_assignment_white_18dp"
+                android:id="@+id/imageButtonSettltment"
+                app:layout_constraintStart_toEndOf="@id/guideline_main_body_v_50"
+                app:layout_constraintEnd_toStartOf="@id/guideline_main_body_v_75"
+                app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+                app:layout_constraintBottom_toTopOf="@id/guideline_main_body_h_90"
+                android:background="@drawable/ripple_button_menu" android:layout_margin="2dp"
+                android:contentDescription="@string/include_main_image_settlement"/>
+        <TextView
+                android:text="@string/include_main_menu_settlement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewSettlement"
+                app:layout_constraintStart_toStartOf="@id/imageButtonSettltment"
+                app:layout_constraintEnd_toEndOf="@id/imageButtonSettltment"
+                app:layout_constraintBottom_toBottomOf="@id/imageButtonSettltment" android:layout_marginBottom="2dp"
+                android:textColor="#FFFFFF" android:textAlignment="center"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_receipt_white_18dp"
+                android:id="@+id/imageButtonReport"
+                app:layout_constraintStart_toEndOf="@id/guideline_main_body_v_75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_10"
+                app:layout_constraintBottom_toTopOf="@id/guideline_main_body_h_90"
+                android:background="@drawable/ripple_button_menu" android:layout_margin="2dp"
+                android:contentDescription="@string/include_main_image_report"/>
+        <TextView
+                android:text="@string/include_main_menu_report"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewReport"
+                app:layout_constraintStart_toStartOf="@id/imageButtonReport"
+                app:layout_constraintEnd_toEndOf="@id/imageButtonReport"
+                app:layout_constraintBottom_toBottomOf="@id/imageButtonReport" android:layout_marginBottom="2dp"
+                android:textColor="#FFFFFF" android:textAlignment="center"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_credit_card_white_18dp"
+                android:id="@+id/imageButtonInstalAmex" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline_main_body_v_25"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_main_body_h_65" android:layout_margin="2dp"
+                android:background="@drawable/ripple_button_menu"
+                android:contentDescription="@string/include_main_image_sale" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="1.0" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/guideline_main_body_h_90"/>
+        <TextView
+                android:text="AMEX Instalment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewInstalmentAmex"
+                app:layout_constraintStart_toStartOf="@id/imageButtonSale"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonInstalAmex"
+                android:textColor="#FFFFFF" android:textAlignment="center" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_main_body_v_25" android:layout_marginBottom="2dp"
+        />
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/round_credit_card_white_18dp"
+                android:id="@+id/imageButtonInstalBay"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_main_body_v_50"
+                app:layout_constraintBottom_toTopOf="@+id/guideline_main_body_h_65" android:layout_margin="2dp"
+                android:background="@drawable/ripple_button_menu"
+                android:contentDescription="@string/include_main_image_sale" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintVertical_bias="0.0" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@id/guideline_main_body_h_90" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@id/guideline_main_body_v_25" android:layout_marginStart="8dp"/>
+        <TextView
+                android:text="BAY Instalment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/textViewInstalmentBay"
+                app:layout_constraintStart_toStartOf="@id/imageButtonInstalBay"
+                app:layout_constraintBottom_toBottomOf="@+id/imageButtonInstalBay"
+                android:textColor="#FFFFFF" android:textAlignment="center" app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_main_body_v_50" android:layout_marginBottom="2dp"
+        />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

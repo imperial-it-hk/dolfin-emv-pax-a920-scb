@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/chk_enable_print_txn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_10pcnt"
+        app:layout_constraintTop_toBottomOf="@id/chk_enable_erm" />
+
+    <EditText
+        android:id="@+id/tx_edtx_store_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_40pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tx_edtx_bank_code" />
+
+    <EditText
+        android:id="@+id/tx_edtx_merchant_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_40pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tx_edtx_store_code" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="5dp" />
+
+    <TextView
+        android:id="@+id/tx_label_initail_terminal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Initial Terminal parameter :"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/gl_top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_40pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/tx_label_bank_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bank Code : "
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondary_text_light"
+        app:layout_constraintBottom_toBottomOf="@id/tx_edtx_bank_code"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_40pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_initail_terminal" />
+
+    <TextView
+        android:id="@+id/tx_label_store_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Store Code : "
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondary_text_light"
+        app:layout_constraintBottom_toBottomOf="@id/tx_edtx_store_code"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_40pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_bank_code" />
+
+    <TextView
+        android:id="@+id/tx_label_merchant_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Merchant Code : "
+        android:textAlignment="textEnd"
+        android:textColor="@color/secondary_text_light"
+        app:layout_constraintBottom_toBottomOf="@id/tx_edtx_merchant_code"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_40pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_store_code" />
+
+    <EditText
+        android:id="@+id/tx_edtx_bank_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_40pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_initail_terminal" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_unknown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <TextView
+        android:id="@+id/tx_label_enable_erm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_ereceipt_printing_option_01"
+        android:textColor="@color/secondary_text_light"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_10pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_edtx_merchant_code"
+        tools:layout_constraintRight_toLeftOf="@id/gl_right" />
+
+    <CheckBox
+        android:id="@+id/chk_enable_erm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_10pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_edtx_merchant_code" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_10pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <TextView
+        android:id="@+id/tx_label_enable_print_txn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/title_ereceipt_printing_option_02"
+        android:textColor="@color/secondary_text_light"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_10pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/chk_enable_erm" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_12pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <TextView
+        android:id="@+id/tx_label_merc_copy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ereceipt_merc_copy"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/gl_mid"
+        app:layout_constraintRight_toLeftOf="@id/gl_right_75pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_enable_print_txn" />
+
+    <TextView
+        android:id="@+id/tx_label_cust_copy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ereceipt_cust_copy"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toRightOf="@id/tx_label_merc_copy"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toTopOf="@id/tx_label_merc_copy" />
+
+    <TextView
+        android:id="@+id/tx_label_num_receipt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/title_ereceipt_printing_01"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_12pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right_65pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_merc_copy" />
+
+    <TextView
+        android:id="@+id/tx_label_num_receipt2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/title_ereceipt_printing_02"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_12pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right_65pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_num_receipt" />
+
+    <TextView
+        android:id="@+id/tx_label_enable_print_pre_settle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ereceipt_printing_option_03"
+        android:textColor="@color/secondary_text_light"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_10pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toTopOf="@id/chk_print_pre_settle" />
+
+    <CheckBox
+        android:id="@+id/chk_print_pre_settle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_vertical_left"
+        app:layout_constraintRight_toLeftOf="@id/gl_left_10pcnt"
+        app:layout_constraintTop_toBottomOf="@id/chk_print_support_pending_upload" />
+
+    <CheckBox
+        android:id="@+id/chk_print_uploaded_merc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_right_65pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right_75pcnt"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_merc_copy" />
+
+    <CheckBox
+        android:id="@+id/chk_print_force_settle_print_all"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ereceipt_settle_printing_all_trans"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_12pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_enable_print_pre_settle" />
+
+    <CheckBox
+        android:id="@+id/chk_print_support_pending_upload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ereceipt_printing_03"
+        android:textColor="@color/secondary_text_light"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_12pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/chk_print_upload_error_merc" />
+
+    <CheckBox
+        android:id="@+id/chk_print_upload_error_merc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_right_65pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right_75pcnt"
+        app:layout_constraintTop_toBottomOf="@id/chk_print_uploaded_merc" />
+
+    <CheckBox
+        android:id="@+id/chk_print_uploaded_cust"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_85pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/tx_label_cust_copy" />
+
+    <CheckBox
+        android:id="@+id/chk_print_upload_error_cust"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gl_left_85pcnt"
+        app:layout_constraintRight_toLeftOf="@id/gl_right"
+        app:layout_constraintTop_toBottomOf="@id/chk_print_uploaded_cust" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_14pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right_75pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_right_65pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_left_85pcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@id/gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_right"
+        app:layout_constraintStart_toEndOf="@id/gl_mid"
+        app:layout_constraintTop_toBottomOf="@id/gl_unknown"
+        tools:layout_constraintRight_toLeftOf="@id/gl_right" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/accent"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toTopOf="@id/gl_bot"
+        app:layout_constraintEnd_toStartOf="@id/gl_mid"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_left"
+        app:layout_constraintTop_toBottomOf="@id/gl_unknown"
+        tools:layout_constraintRight_toLeftOf="@id/gl_right" />
+
+</androidx.constraintlayout.widget.ConstraintLayout >

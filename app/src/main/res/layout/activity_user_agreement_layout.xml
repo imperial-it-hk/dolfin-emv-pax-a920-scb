@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/AgreementContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_bg_light"
+        android:gravity="center">
+
+
+        <CheckBox
+            android:id="@+id/AgreementCheck"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="@dimen/space_horizontal_small"
+            android:layout_marginEnd="@dimen/space_horizontal_small" />
+
+        <Button
+            android:id="@+id/enter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/user_agreement_agree"
+            android:background="@drawable/btn_bg_light"
+            android:textColor="@color/primary_text_dark"
+            android:textSize="@dimen/font_button"
+            android:layout_marginStart="@dimen/space_horizontal_small"
+            android:layout_marginEnd="@dimen/space_horizontal_small"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

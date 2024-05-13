@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.pax.view.ClssLight
+        android:id="@+id/light1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/clss_light"
+        android:src="@drawable/blue_off"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/image_desc"
+        app:offSrc="@drawable/blue_off"
+        app:onSrc="@drawable/blue_on"/>
+
+    <com.pax.view.ClssLight
+        android:id="@+id/light2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/clss_light"
+        android:src="@drawable/yellow_off"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/image_desc"
+        app:offSrc="@drawable/yellow_off"
+        app:onSrc="@drawable/yellow_on"/>
+
+    <com.pax.view.ClssLight
+        android:id="@+id/light3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/clss_light"
+        android:src="@drawable/green_off"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/image_desc"
+        app:offSrc="@drawable/green_off"
+        app:onSrc="@drawable/green_on"/>
+
+    <com.pax.view.ClssLight
+        android:id="@+id/light4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/clss_light"
+        android:src="@drawable/red_off"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/image_desc"
+        app:offSrc="@drawable/red_off"
+        app:onSrc="@drawable/red_on"/>
+
+</LinearLayout>

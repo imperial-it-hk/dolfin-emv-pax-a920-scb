@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/dialog_sms"
+        android:icon="@drawable/sms"
+        app:showAsAction="never"
+        android:title="@string/dialog_sms"/>
+
+    <item
+        android:id="@+id/dialog_email"
+        android:icon="@drawable/email"
+        app:showAsAction="never"
+        android:title="@string/dialog_email" />
+</menu>

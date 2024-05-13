@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/trans_item_header" />
+
+    <LinearLayout
+        android:id="@+id/expandable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/space_horizontal"
+        android:layout_marginEnd="@dimen/space_horizontal"
+        android:paddingBottom="@dimen/space_vertical_small">
+
+        <LinearLayout
+            android:id="@+id/linear_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_state" />
+
+            <TextView
+                android:id="@+id/history_detail_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_dcc_ex_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_dcc_ex_rate" />
+
+            <TextView
+                android:id="@+id/history_detail_dcc_ex_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_wallet_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/history_detail_wallet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_card_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:id="@+id/history_text_card_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_card_no" />
+
+            <TextView
+                android:id="@+id/history_detail_card_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:id="@+id/history_text_auth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_auth_code" />
+
+            <TextView
+                android:id="@+id/history_detail_auth_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_qr_ref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:id="@+id/history_text_qr_ref"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_qr_ref" />
+
+            <TextView
+                android:id="@+id/history_detail_qr_ref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_ref_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:id="@+id/history_text_ref_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_ref_no" />
+
+            <TextView
+                android:id="@+id/history_detail_ref_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_history_redeem_amt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_redeem_amount" />
+
+            <TextView
+                android:id="@+id/history_redeem_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_history_redeem_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_redeem_point" />
+
+            <TextView
+                android:id="@+id/history_redeem_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_history_redeem_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_redeem_qty" />
+
+            <TextView
+                android:id="@+id/history_redeem_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_history_redeem_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_light"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_size_prompt"
+                android:text="@string/history_detail_redeem_code" />
+
+            <TextView
+                android:id="@+id/history_redeem_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/primary_text_light"
+                android:textSize="@dimen/font_size_value" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/history_trans_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/space_vertical_small"
+            android:paddingBottom="@dimen/space_vertical_small">
+
+            <Button
+                android:id="@+id/history_trans_action_void"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/trans_void"
+                android:drawableStart="@drawable/cx"
+                android:paddingStart="@dimen/space_horizontal_small"
+                android:paddingEnd="0dp"
+                android:background="@drawable/btn_bg_light"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_button"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="@dimen/space_horizontal"
+                style="?buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/history_trans_action_adjust"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/trans_tip_adjust"
+                android:drawableStart="@drawable/adjust"
+                android:paddingStart="@dimen/space_horizontal_small"
+                android:paddingEnd="0dp"
+                android:background="@drawable/btn_bg_light"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_button"
+                android:layout_marginStart="@dimen/space_horizontal"
+                android:layout_marginEnd="@dimen/space_horizontal"
+                style="?buttonBarButtonStyle"/>
+
+            <Button
+                android:id="@+id/history_trans_action_reprint"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:text="@string/trans_reprint"
+                android:drawableStart="@drawable/cd"
+                android:paddingStart="@dimen/space_horizontal_small"
+                android:paddingEnd="0dp"
+                android:background="@drawable/btn_bg_light"
+                android:textColor="@color/primary_text_dark"
+                android:textSize="@dimen/font_button"
+                android:layout_marginStart="@dimen/space_horizontal"
+                android:layout_marginEnd="0dp"
+                style="?buttonBarButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/LongLine"/>
+
+</LinearLayout>
